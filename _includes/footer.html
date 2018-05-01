@@ -1,0 +1,45 @@
+<div id="footerwrap">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-4">
+                <h4>About</h4>
+                <div class="hline-w"></div>
+                <p>{{ site.about }}</p>
+            </div>
+
+            <div class="col-lg-4">
+                <h4>Contact</h4>
+                <div class="hline-w"></div>
+                <p>
+                  <a href="mailto:haberkernh@janelia.hhmi.org">e-mail:</a> {{ site.email }}<br/>
+                </p>
+                <p>
+                    {% for network in site.social %}
+                        <a href="{{ network.url }}" class="btn-social btn-outline" target="_blank">
+                          <i class="fa fa-{{ network.title }}" aria-hidden="true"></i>
+                          <span class="sr-only">{{network.title}}</span>
+                        </a>
+                    {% endfor %}
+                </p>
+            </div>
+
+            <div class="col-lg-4">
+                <h4>Credits</h4>
+                <div class="hline-w"></div>
+                <p>
+                  This website was constructed using the Jekyll
+                  <a href=https://github.com/st4ple/solid-jekyll target="_blank">
+                    Solid theme</a>, which is distributed under the
+                    <a href=https://creativecommons.org/licenses/by/3.0/ target="_blank">
+                      CC BY 3.0</a> license.
+
+                      The map on the contact page was taken from
+                    <a href=https://www.openstreetmap.org target="_blank">
+                      Open Steet Map</a> under the
+                      <a href=https://creativecommons.org/licenses/by-sa/2.0/ target="_blank">
+                        CC BY-SA</a> license.
+                </p>
+            </div>
+        </div><! --/row -->
+    </div><! --/container -->
+</div><! --/footerwrap -->

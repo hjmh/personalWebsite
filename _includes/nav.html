@@ -1,0 +1,33 @@
+<!-- Fixed navbar -->
+<div class="navbar navbar-default navbar-fixed-top" role="navigation">
+  <div class="container">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="{{ "/"  | prepend: site.baseurl }}">
+        <img src="{{ "/assets/ico/HHicon.png" | prepend: site.baseurl }}" alt="{{ site.title }}" height=auto>
+      </a>
+    </div>
+    <div class="navbar-collapse collapse navbar-right">
+      <ul class="nav navbar-nav">
+        <li {% if page.title == "Home" %}class="active"{% endif %}><a href="{{"/" | prepend: site.baseurl }}">HOME</a></li>
+        <li {% if page.title == "About" %}class="active"{% endif %}><a href="{{"/about/" | prepend: site.baseurl }}">ABOUT</a></li>
+        <li {% if page.title == "Research" %}class="active"{% endif %}>
+          <a class="dropdown-menu-toggle" data-toggle="dropdown" href="{{"/research/" | prepend: site.baseurl }}">RESEARCH <span class="caret"></span></a>
+            <ul class="dropdown-menu dropdown-menu-left">
+              <li><a href="{{"/research/" | prepend: site.baseurl }}">INTRO</a></li>
+              <li><a href="{{"/research/" | prepend: site.baseurl }}#approach">APPROACH</a></li>
+              <li><a href="{{"/research/" | prepend: site.baseurl }}#portfolio">PROJECTS</a></li>
+            </ul>
+        </li>
+        <li {% if page.title == "Publications" %}class="active"{% endif %}><a href="{{"/pubs/" | prepend: site.baseurl }}">PUBLICATIONS</a></li>
+        <!--<li {% if page.title == "Blog" %}class="active"{% endif %}><a href="{{"/blog/" | prepend: site.baseurl }}">BLOG</a></li>-->
+        <li {% if page.title == "Contact" %}class="active"{% endif %}><a href="{{"/contact/" | prepend: site.baseurl }}">CONTACT</a></li>
+      </ul>
+    </div><!--/.nav-collapse -->
+  </div>
+</div>

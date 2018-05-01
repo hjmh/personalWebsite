@@ -1,0 +1,55 @@
+
+<div class=anchor id="portfolio" />
+<div class="container mtb" >
+  <br>
+  <h3 class="centered">
+    Find out more about specific projects
+  </h3>
+  <br>
+
+  <div class="portfolioFilter clearfix centered">
+      <a href="#" data-filter="*" class="current">All</a>
+      <a href="#" data-filter=".conditioning">Conditioning</a>
+      <a href="#" data-filter=".cricket">Cricket</a>
+      <a href="#" data-filter=".fly">Fruit flies</a>
+      <a href="#" data-filter=".vr">Virtual Reality</a>
+      <a href="#" data-filter=".treadmill">Treadmill</a>
+  </div>
+
+  <div id="portfoliowrap">
+      <div class="portfolio-centered">
+          <div class="recentitems portfolio">
+              {% for project in site.projects limit:include.limit %}
+              <div class="{{ project.topics }}">
+                  <div class="portfolio-item">
+                        <div class="he-wrap tpl6">
+                          <img src="{{ "/assets/img/project/" | prepend: site.baseurl }}{{ project.img }}" alt="">
+                          <div class="he-view">
+                              <div class="bg a0" data-animate="fadeIn">
+                                  <a href="{{  project.url | prepend: site.baseurl }}">
+                                    <h3 class="a1" data-animate="fadeInUp">{{ project.title }}</h3></a>
+                                  <p class="a1" data-animate="fadeInUp"> {{ project.summary }} </p>
+
+                                  <!--
+                                  <a data-rel="prettyPhoto" href="{{ "/assets/img/project/" |
+                                  prepend: site.baseurl }}{{ project.img }}" class="dmbutton a2"
+                                  data-animate="fadeInUp"><i class="fa fa-search"></i></a>
+
+                                  <a href="{{  project.url | prepend: site.baseurl }}"
+                                  class="dmbutton a2" data-animate="fadeInUp"><i
+                                  class="fa fa-link"></i></a>
+                                  -->
+
+                              </div><!-- he bg -->
+                            </div><!-- he view -->
+                         </div><!-- he wrap -->
+                      </div><!-- end col-12 -->
+                  </div><!-- tags -->
+              {% endfor %}
+          </div><!-- portfolio -->
+          <div class="container mtb" >
+            <p><br/><a href="/research/" class="btn btn-theme">Top</a></p>
+          </div>
+      </div><!-- portfolio container -->
+  </div><!--/Portfoliowrap -->
+</div>
