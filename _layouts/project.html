@@ -26,14 +26,14 @@ layout: default
             <h4>Overview</h4>
             <div class="hline"></div>
             <!-- <p><b>Start date:</b> {{ page.date | date: "%b %Y" }}</p> -->
-            <p ><b>Author:</b> {{ page.author }}</p>
+            <!-- <p ><b>Author:</b> {{ page.author }}</p> -->
             <p><b>Categories:</b>
               {% for line in page.categories.first.lines %}
                 {{ line }},
             {% endfor %}</p>
-            <p><b>Supervisor:</b> {{ page.supervisor }}</p>
-            <p><b>Collaborators:</b> {{ page.collaborators }}</p>
-            <p><b>Related Publication:</b> <a href="{{ page.publink }}" target="_blank">{{ page.pubname }}</a></p>
+            <!-- <p><b>Supervisor:</b> {{ page.supervisor }}</p> -->
+            <!-- <p><b>Collaborators:</b> {{ page.collaborators }}</p> -->
+            <p><b>Publication:</b> <a href="{{ page.publink }}" target="_blank">{{ page.pubname }}</a></p>
         </div>
     </div><! --/row -->
 </div><! --/container -->
