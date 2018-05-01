@@ -25,5 +25,5 @@ We monitored walking behavior of female crickets on a trackball during lateral a
 
 Phonotaxis in natural environments, which require the integration of multiple sensory cues, may therefore be more variable than phonotaxis measured under ideal laboratory conditions. Combining this new behavioral paradigm with neurophysiological methods will show where the sensory-motor integration of antennal and acoustic stimulation occurs and how this is achieved on a mechanistic level.
 
-Related publication:
+Read more in:<br>
 Haberkern H, Hedwig B (2016). [Behavioural integration of auditory and antennal stimulation during phonotaxis in the field cricket <i>Gryllus bimaculatus</i>.](http://jeb.biologists.org/content/219/22/3575) <i>J Exp Biol.</i> 219(Pt 22):3575-3586.
