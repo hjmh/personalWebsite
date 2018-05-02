@@ -36,6 +36,10 @@ h1, h2, h3, h4, h5, h6 {
 	font-weight: 700;
 }
 
+h4 {
+	margin-top: 10px;
+	padding-top: 0px;
+}
 
 p {
 	padding: 0;
@@ -290,8 +294,8 @@ a:focus {
 }
 
 .mtb {
-	margin-top: 40px;
-	margin-bottom: 40px;
+	margin-top: 30px;
+	margin-bottom: 30px;
 }
 
 .mb {
@@ -317,6 +321,9 @@ a:focus {
 
 .container-parallax{
 	background-attachment: fixed;
+	margin-top: 30px;
+	margin-left: 10%;
+	margin-right: 10%;
 }
 
 [class*="forestVR__"] {
@@ -327,7 +334,7 @@ a:focus {
   /* center it */
   background-position: center center;
   /* Scale it nicely to the element */
-  background-size: 80% auto;
+  background-size: 60% auto;
 	background-repeat: no-repeat;
 }
 
@@ -384,7 +391,7 @@ circle:hover, polygon:hover, path:hover {
 	background-color: #ddb388;
 	min-height: 0px;
 	padding-top: 100px;
-	padding-bottom: 50px;
+	padding-bottom: 30px;
 	text-align: center;
 }
 
