@@ -169,9 +169,12 @@ a:focus {
 	background-color: transparent;
 }
 
-.dropdown:hover .dropbtn {
-    background-color: #555;
-    color: white;
+.navbar-default .navbar-nav>.open>a,
+.navbar-default .navbar-nav>.open>a:focus,
+.navbar-default .navbar-nav>.open>a:hover{
+	color: #e6e698;
+  background-color: rgba(0,0,0,0.1);
+	border-color: transparent;
 }
 
 .dropdown-menu{
@@ -181,10 +184,9 @@ a:focus {
 	box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
 }
 
-
 .dropdown-menu > li > a {
 	font-weight: 500;
-	font-size: 12px;
+	font-size: 14px;
 	color: white;
 }
 
@@ -193,7 +195,6 @@ a:focus {
 	font-weight: 700;
 	background-color: transparent;
 }
-
 .anchor { padding-top: 70px; }
 
 .btn-theme {
@@ -316,6 +317,177 @@ a:focus {
 }
 
 /*	################################################################
+	Title image on home page
+################################################################# */
+/*
+.homepic {
+	width: 100%;
+  height: 700px;
+	background-image: url("/assets/img/titleWebsitePic_altCol.tiff");
+	background-size: contain;
+	background-repeat: no-repeat;
+}
+
+.homepic:hover {
+	background-image: url("/assets/img/titleWebsitePic_greys_dark.tiff");
+}
+*/
+body {
+  font-family:
+    -apple-system, BlinkMacSystemFont,
+    "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans",
+    "Helvetica Neue", sans-serif;
+  font-size: 80%;
+  line-height: 1.5;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+.map {
+  position: relative;
+  max-width: 1100px;
+  margin: auto;
+  background-color: #ccc;
+}
+.map img {
+  display: block;
+  width: 100%;
+}
+
+.map-popup {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  z-index: 99;
+  width: 60%;
+  padding: 2rem;
+  background-color: #fff;
+  transition: all 300ms ease-in;
+  transform: translate(-50%,-50%);
+  box-shadow: 0 0 24px rgba(0,0,0,0.22);
+  opacity: 0;
+  visibility: hidden;
+}
+
+.map-popup > *:first-child { margin-top: 0; }
+.map-popup > *:last-child { margin-bottom: 0; }
+
+.map-popup.open {
+  opacity: 1;
+  visibility: visible;
+}
+
+.marker {
+  position: absolute;
+  z-index: 1;
+  display: inline-block;
+  width: 30px;
+  height: 30px;
+  color: #fff;
+  line-height: 30px;
+  text-align: center;
+  text-decoration: none;
+  border-radius: 50%;
+  background-color: #46b9b9;
+  transition: all 300ms;
+}
+
+.marker1 {
+  top: 70%;
+  left: 50%;
+}
+.marker2 {
+  top: 60%;
+  left: 70%;
+}
+.marker3 {
+  top: 20%;
+  left: 20%;
+}
+.marker4 {
+  top: 20%;
+  left: 50%;
+}
+.marker5 {
+  top: 80%;
+  left: 25%;
+}
+.marker5 {
+  top: 60%;
+  left: 20%;
+}
+
+@media only screen and (min-width:48em) {
+  .map-item {
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    }
+    .map-item .marker {
+      top: auto;
+      left: auto;
+    }
+  .map-item1 {
+    top: 70%;
+    left: 50%;
+  }
+  .map-item2 {
+    top: 60%;
+    left: 70%;
+  }
+	.map-item3 {
+    top: 20%;
+    left: 20%;
+  }
+  .map-item4 {
+    top: 20%;
+    left: 50%;
+  }
+	.map-item5 {
+    top: 80%;
+    left: 25%;
+  }
+	.map-item6 {
+    top: 60%;
+    left: 20%;
+  }
+
+  .map-popup {
+    position: absolute;
+    left: 58px;
+    width: 280px;
+    transform: translateY(-50%);
+		text-align: left;
+  }
+  .map-popup:before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: -16px;
+    margin-top: -16px;
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 16px 16px 16px 0;
+    border-color: transparent #fff transparent transparent;
+		text-align: left;
+  }
+
+  .map-popup.edge {
+    left: auto;
+    right: calc(100% + 24px);
+  }
+  .map-popup.edge:before {
+    left: auto;
+    right: -16px;
+    border-width: 16px 0 16px 16px;
+    border-color: transparent transparent transparent #fff;
+  }
+}
+/*	################################################################
 	Parallax on research/portfolio page
 ################################################################# */
 
@@ -366,7 +538,7 @@ a:focus {
 /*	################################################################
 	SVG on index page
 ################################################################# */
-
+/*
 svg { height: 50vw; }
 circle {
 	fill: #ddb388;
@@ -381,7 +553,7 @@ circle:hover, polygon:hover, path:hover {
 	font-family: 'Raleway', sans-serif;
 	font-weight: 550;
 }
-
+*/
 
 /*	################################################################
 	SITE WRAPS
@@ -430,13 +602,14 @@ circle:hover, polygon:hover, path:hover {
 #portfoliowrap {
 	padding-top: 10px;
 	margin-bottom: 60px;
-	padding-left: 0px;
-	padding-right: 0px;
+	padding-left: 10px;
+	padding-right: 10px;
 	display: block;
 	text-align: center
 }
 
 #portfoliowrap h3 {
+	margin-top: 0px;
 	margin-bottom: 25px;
 }
 
@@ -452,7 +625,7 @@ circle:hover, polygon:hover, path:hover {
 .portfolio-item .title:before {border-radius:0; display:none}
 .portfolio-item p {
 	margin:-20px 0 20px;
-	padding:0% 10px 10px 10px;
+	padding:0% 0px 10px 10px;
 	text-align: center;
 	color:#fff;
 }

@@ -49,14 +49,16 @@
         <li class="active"><a href="/">HOME</a></li>
         <li ><a href="/about/">ABOUT</a></li>
         <li >
-          <a class="dropdown-menu-toggle" data-toggle="dropdown" href="/research/">RESEARCH <span class="caret"></span></a>
+          <a data-toggle="dropdown" data-hover="dropdown" href="/research/">RESEARCH <b class="caret"></b></a>
             <ul class="dropdown-menu dropdown-menu-left">
-              <li><a href="/research/">INTRO</a></li>
-              <li><a href="/research/#approach">APPROACH</a></li>
-              <li><a href="/research/#portfolio">PROJECTS</a></li>
+              <!--<li class="divider"></li>-->
+              <li><a href="/research/">Main</a></li>
+              <li><a href="/research/#approach">Approach</a></li>
+              <li><a href="/research/#portfolio">Projects</a></li>
             </ul>
         </li>
         <li ><a href="/pubs/">PUBLICATIONS</a></li>
+        <li><a href="https://thoughtsintothevoidblog.wordpress.com">BLOG</a></li>
         <!--<li ><a href="/blog/">BLOG</a></li>-->
         <li ><a href="/contact/">CONTACT</a></li>
       </ul>
@@ -74,7 +76,7 @@
                   I'm a neuroscientist studying visually guided navigation in fruit flies.
                   Activities I enjoy in my free time include sewing, gardening and observing animals.
                 </h3>
-
+                </br>
                 <!-- TODO: add more description here -->
             </div>
         </div><!-- /row -->
@@ -83,30 +85,98 @@
 
 
   <div id="service">
-    <div class="container centered">
-      <div class="col-lg-8 col-lg-offset-2">
-        <p>
-          <br>
-        </p>
-      </div>
-        <div class="col-lg-8 col-lg-offset-2 himg">
-            <img class="img-responsive" src="/assets/img/websiteTitlePic_flyNaviVR.jpg" alt="Fly Navigation VR" width=1000px>
-        </div>
-      </div>
+    <div class="container">
 
     </div><!--/container -->
 </div><!--/service -->
 
+<div class="map">
+
+  <div class="map-item map-item1">
+    <a class="marker marker1" href="#marker1">1</a>
+    <aside id="marker1" class="map-popup">
+      <h4 class="popup-title">My research</h4>
+      <p>Broadly speaking, I am interested in understanding how environment and past experiences shape
+        the behavior of animals. I do experiments in the lab, but also spend a lot of time on my computer analyzing data.</p>
+      <a class="btn" href="/research/">More science!</a>
+    </aside>
+  </div>
+
+  <div class="map-item map-item2">
+    <a class="marker marker2" href="#marker2">2a</a>
+
+    <aside id="marker2" class="map-popup">
+      <h4 class="popup-title">Some sewing projects</h4>
+      <p>If you like to learn more, check out my blog!</p>
+      <a class="btn" href="https://thoughtsintothevoidblog.wordpress.com"> --> To my blog</a>
+    </aside>
+  </div>
+
+  <div class="map-item map-item3">
+    <a class="marker marker3" href="#marker3">3</a>
+
+    <aside id="marker3" class="map-popup">
+      <h4 class="popup-title">I love plants!</h4>
+      <p>Having them around me in my appartment, watching them grow in my garden
+        or admiring strange species in parks and botanical gardens. </p>
+    </aside>
+  </div>
+
+  <div class="map-item map-item4">
+    <a class="marker marker4" href="#marker4">2b</a>
+
+    <aside id="marker4" class="map-popup">
+      <h4 class="popup-title">Sewing materials</h4>
+      <p>My sewing machine and a small selection of my fabric stash.
+        Sadly I don't have too much time to sew right now.</p>
+      <a class="btn" href="https://thoughtsintothevoidblog.wordpress.com"> --> To my blog</a>
+    </aside>
+  </div>
+
+  <div class="map-item map-item5">
+    <a class="marker marker5" href="#marker5">4</a>
+
+    <aside id="marker5" class="map-popup">
+      <h4 class="popup-title">Dry eyes etc...</h4>
+      <p>I love plants! Having them around me in my appartment, watching them grow in my garden
+        or admiring strange species in parks and botanical gardens. </p>
+    </aside>
+  </div>
+
+  <div class="map-item map-item6">
+    <a class="marker marker6" href="#marker6">5</a>
+
+    <aside id="marker5" class="map-popup">
+      <h4 class="popup-title">Painting and photography.</h4>
+      <p>I enjoy closely observing animals, plants and landscapes, which is, I think,
+        why I'm drawn to both painting and photography. </p>
+    </aside>
+  </div>
+
+  <img src="/assets/img/titleWebsitePic_altCol.tiff"alt="">
+</div>
+
+<!--
+<div class="homepic">
+</div>
+
+<div class="view zoom">
+  <img src="/assets/img/titleWebsitePic_altCol.tiff" class="img-fluid" alt="Title image">
+</div>
+
+-->
 <div class="container mtb">
     <div class="row">
       <div class="col-lg-8 col-lg-offset-2">
-
+        <p> In the image above I've collected a few things representing important aspects of my life.
+          I should add that neither my family nor partner feature here, though of course they play a huge role in my life!
+          Click on the hotspots to find out more!</p>
         <!--
         <h4>A little bit about me.</h4>
 
         <p>Hi, I'm Hannah. I'm a neuroscientist trying to understand how animals navigate through space. If I'm not in the lab or analysing data, I like to travel, sew, garden or observe animals.</p>
+        <p><a href="/about/" class="btn btn-theme">More about me</a></p>
         -->
-        <p><br/><a href="/about/" class="btn btn-theme">Read more</a></p>
       </div>
 
     </div><!--/row -->
@@ -187,16 +257,16 @@
                 <div class="hline-w"></div>
                 <p>
                   This website was constructed using the Jekyll
-                  <a href=https://github.com/st4ple/solid-jekyll target="_blank">
-                    Solid theme</a>, which is distributed under the
-                    <a href=https://creativecommons.org/licenses/by/3.0/ target="_blank">
-                      CC BY 3.0</a> license.
+                  <a href="https://github.com/st4ple/solid-jekyll" target="_blank">
+                  Solid theme</a>, which is distributed under the
+                  <a href="https://creativecommons.org/licenses/by/3.0/" target="_blank">
+                  CC BY 3.0</a> license.
+                  The map on the contact page was taken from <a href="https://www.openstreetmap.org" target="_blank">
+                  Open Steet Map</a> under the <a href="https://creativecommons.org/licenses/by-sa/2.0/" target="_blank">
+                  CC BY-SA</a> license.
+                  For the image hotspots on the home page I used code from
+                  <a href="https://codepen.io/katartgraphics/pen/OmQZEe" target="_blank">here</a>.
 
-                      The map on the contact page was taken from
-                    <a href=https://www.openstreetmap.org target="_blank">
-                      Open Steet Map</a> under the
-                      <a href=https://creativecommons.org/licenses/by-sa/2.0/ target="_blank">
-                        CC BY-SA</a> license.
                 </p>
             </div>
         </div><! --/row -->
@@ -212,6 +282,7 @@
 <script src="/assets/js/jquery.isotope.min.js"></script>
 <script src="/assets/js/custom.js"></script>
 <script src="/assets/js/path.js"></script>
+<script src="/assets/js/hotspots.js"></script>
 
 
 <script>
