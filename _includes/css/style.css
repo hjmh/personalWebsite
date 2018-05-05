@@ -229,6 +229,7 @@ a:focus {
 	background-color: #222222;
 	border-color: #ffffff;
 	outline: none;
+	border-radius: 3px;
 }
 .dmbutton {
 	background:rgba(0, 0, 0, 0);
@@ -254,6 +255,7 @@ a:focus {
 	transition: background-color 300ms ease-out;
 	-webkit-appearance: none;
 	font-weight: normal !important;
+	border-radius: 3px;
 }
 
 .btn-info {
@@ -337,7 +339,7 @@ body {
     -apple-system, BlinkMacSystemFont,
     "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans",
     "Helvetica Neue", sans-serif;
-  font-size: 80%;
+  font-size: 120%;
   line-height: 1.5;
 }
 
@@ -370,6 +372,7 @@ img {
   box-shadow: 0 0 24px rgba(0,0,0,0.22);
   opacity: 0;
   visibility: hidden;
+	text-align: left;
 }
 
 .map-popup > *:first-child { margin-top: 0; }
@@ -635,16 +638,25 @@ circle:hover, polygon:hover, path:hover {
 {
 	color:#fff;
 	margin:0;
-	padding:25% 10px 10px 10px;
+	padding:20% 10px 10px 10px;
 	font-size:18px;
+	text-align: center;
+}
+
+.a2
+{
+	color:#fff;
+	margin-top: 10%;
 	text-align: center;
 }
 
 .tpl6 .dmbutton
 {
 	display:inline-block;
-	margin:30px 5px 20px 5px;
+	margin:10px 5px 10px 5px;
 	font-size:13px;
+	border-color: none;
+	border-radius: 3px;
 }
 
 .tpl6 .bg
@@ -663,7 +675,7 @@ circle:hover, polygon:hover, path:hover {
   border: 1px solid {{ site.colors.buttonborder }};
 	background: #fff;
   padding: 4px 10px;
-  border-radius: 1px;
+  border-radius: 3px;
   display: inline-block;
 }
 
@@ -791,8 +803,8 @@ circle:hover, polygon:hover, path:hover {
 .carousel-inner > .item > a > img {
   display: block;
   max-width: 100%;
-  height: 380px;
-  max-height: 400px;
+  height: 300px;
+  max-height: 350px;
   margin: 0 auto;
 }
 

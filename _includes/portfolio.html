@@ -14,6 +14,7 @@
       <a href="#" data-filter=".fly">Fruit flies</a>
       <a href="#" data-filter=".vr">Virtual Reality</a>
       <a href="#" data-filter=".treadmill">Treadmill</a>
+      <a href="#" data-filter=".treadmill">Modeling</a>
   </div>
 
   <div id="portfoliowrap">
@@ -27,9 +28,12 @@
                           <div class="he-view">
                               <div class="bg a0" data-animate="fadeIn">
                                   <a href="{{  project.url | prepend: site.baseurl }}">
-                                    <h3 class="a1" data-animate="fadeInUp">{{ project.title }}</h3></a>
-                                  <p class="a1" data-animate="fadeInUp"> {{ project.summary }} </p>
-
+                                  <h3 class="a1" data-animate="fadeInUp">{{ project.title }}</h3></a>
+                                  <p class="a1" data-animate="fadeInUp"> {{ project.summary }}</p>
+                                  <p>
+                                  <a href="{{  project.url | prepend: site.baseurl }}" class="a2" data-animate="fadeInUp">
+                                      <i class="fa fa-plus-square-o" style="font-size:30px"></i></a>
+                                  </p>
                               </div><!-- he bg -->
                             </div><!-- he view -->
                          </div><!-- he wrap -->

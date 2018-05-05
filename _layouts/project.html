@@ -6,34 +6,35 @@ layout: default
 
 <div class="container mtb">
     <div class="row">
+        <div class="col-lg-4">
+          {% include carousel.html %}
+        </div>
 
-        {% include carousel.html %}
 
-        <div class="col-lg-7 col-lg-offset-1">
-            <div class="spacing"></div>
+        <div class="col-lg-7">
+          <h4>{{ page.title }}</h4>
+          <div class="hline"></div>
 
-            <h4>{{ page.title }}</h4>
-            <div class="hline"></div>
+          {{ content }}
 
-              {{ content }}
-
-            <p>{{ site.research }}</p>
-            <p><br/><a href="{{ "/research/#portfolio" | prepend: site.baseurl }}" class="btn btn-theme">Back</a></p>
+          <p>{{ site.research }}</p>
+          <p><br/><a href="{{ "/research/#portfolio" | prepend: site.baseurl }}" class="btn btn-theme">Back</a></p>
 
         </div>
+        <!--
         <div class="col-lg-3 col-lg-offset-0">
             <div class="spacing"></div>
             <h4>Overview</h4>
             <div class="hline"></div>
-            <!-- <p><b>Start date:</b> {{ page.date | date: "%b %Y" }}</p> -->
-            <!-- <p ><b>Author:</b> {{ page.author }}</p> -->
+            <p><b>Start date:</b> {{ page.date | date: "%b %Y" }}</p>
+            <p ><b>Author:</b> {{ page.author }}</p>
             <p><b>Categories:</b>
               {% for line in page.categories.first.lines %}
                 {{ line }},
             {% endfor %}</p>
-            <!-- <p><b>Supervisor:</b> {{ page.supervisor }}</p> -->
-            <!-- <p><b>Collaborators:</b> {{ page.collaborators }}</p> -->
+            <p><b>Supervisor:</b> {{ page.supervisor }}</p>
+            <p><b>Collaborators:</b> {{ page.collaborators }}</p>
             <p><b>Publication:</b> <a href="{{ page.publink }}" target="_blank">{{ page.pubname }}</a></p>
-        </div>
+          </div> -->
     </div><! --/row -->
 </div><! --/container -->
