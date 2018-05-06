@@ -319,6 +319,12 @@ a:focus {
 }
 
 /*	################################################################
+	Customized panel collapse
+################################################################# */
+
+
+
+/*	################################################################
 	Title image on home page
 ################################################################# */
 /*
@@ -798,6 +804,14 @@ circle:hover, polygon:hover, path:hover {
 	color: white;
 	margin-left: 12px;
 }
+
+#experience p{
+	font-weight: 400;
+	font-size: 10pt;
+	line-height: 20px;
+	text-align: left;
+}
+
 
 .carousel-inner > .item > img,
 .carousel-inner > .item > a > img {

@@ -20,15 +20,16 @@
           <a data-toggle="dropdown" data-hover="dropdown" href="{{"/research/" | prepend: site.baseurl }}">RESEARCH <b class="caret"></b></a>
             <ul class="dropdown-menu dropdown-menu-left">
               <!--<li class="divider"></li>-->
-              <li><a href="{{"/research/" | prepend: site.baseurl }}">Main</a></li>
+              <li><a href="{{"/research/" | prepend: site.baseurl }}">Interests</a></li>
               <li><a href="{{"/research/" | prepend: site.baseurl }}#approach">Approach</a></li>
-              <li><a href="{{"/research/" | prepend: site.baseurl }}#portfolio">Projects</a></li>
             </ul>
         </li>
+        <li {% if page.title == "Projects" %}class="active"{% endif %}><a href="{{"/portfolio/" | prepend: site.baseurl }}">PROJECTS</a></li>
         <li {% if page.title == "Publications" %}class="active"{% endif %}><a href="{{"/pubs/" | prepend: site.baseurl }}">PUBLICATIONS</a></li>
         <li><a href="https://thoughtsintothevoidblog.wordpress.com">BLOG</a></li>
         <!--<li {% if page.title == "Blog" %}class="active"{% endif %}><a href="{{"/blog/" | prepend: site.baseurl }}">BLOG</a></li>-->
-        <li {% if page.title == "Contact" %}class="active"{% endif %}><a href="{{"/contact/" | prepend: site.baseurl }}">CONTACT</a></li>
+        <li {% if page.title == "Contact" %}class="active"{% endif %}><a href="{{"/contact/" | prepend: site.baseurl }}">
+          <i class="fa fa-pencil-square-o" style="font-size:20px"></i></a></li>
       </ul>
     </div><!--/.nav-collapse -->
   </div>
