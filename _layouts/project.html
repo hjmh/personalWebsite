@@ -6,35 +6,31 @@ layout: default
 
 <div class="container mtb">
     <div class="row">
-        <div class="col-lg-4">
-          {% include carousel.html %}
-        </div>
-
-
-        <div class="col-lg-7">
-          <h4>{{ page.title }}</h4>
-          <div class="hline"></div>
-
-          {{ content }}
-
-          <p>{{ site.research }}</p>
-          <p><br/><a href="{{ "/research/#portfolio" | prepend: site.baseurl }}" class="btn btn-theme">Back</a></p>
-
-        </div>
-        <!--
         <div class="col-lg-3 col-lg-offset-0">
-            <div class="spacing"></div>
+          </br>
+
+          {% include verticalGallery.html %}
+
+          <!--
+          <div id="experience">
             <h4>Overview</h4>
             <div class="hline"></div>
-            <p><b>Start date:</b> {{ page.date | date: "%b %Y" }}</p>
-            <p ><b>Author:</b> {{ page.author }}</p>
-            <p><b>Categories:</b>
-              {% for line in page.categories.first.lines %}
-                {{ line }},
-            {% endfor %}</p>
             <p><b>Supervisor:</b> {{ page.supervisor }}</p>
             <p><b>Collaborators:</b> {{ page.collaborators }}</p>
-            <p><b>Publication:</b> <a href="{{ page.publink }}" target="_blank">{{ page.pubname }}</a></p>
-          </div> -->
-    </div><! --/row -->
-</div><! --/container -->
+            <p><b>Start date:</b> {{ page.date | date: "%b %Y" }}</p>
+            <p><b>Read more:</b> <a href="{{ page.publink }}" target="_blank">{{ page.pubname }}</a></p>
+          </div>
+          -->
+        </div>
+
+        <div class="col-lg-8 col-lg-offset-0">
+          <h3>{{ page.summary }}</h3>
+          <span style="display:block; height: 10px;"></span>
+          {{ content }}
+
+          <p><br/><a href="/portfolio/" class="btn btn-theme"><i class="fas fa-th"></i></a></p>
+
+        </div>
+
+    </div><!-- /row -->
+</div><!-- /container -->

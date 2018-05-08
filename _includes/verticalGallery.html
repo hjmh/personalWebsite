@@ -1,0 +1,9 @@
+<div class="verticalGallery">
+  {% for img in page.carousel %}
+      <div class="item">
+          <img src="{{ "/assets/img/project/carousel/" | prepend: site.baseurl }}{{ img }}" alt="">
+      </div>
+    </br>
+
+  {% endfor %}
+</div>

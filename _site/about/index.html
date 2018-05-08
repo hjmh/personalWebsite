@@ -16,7 +16,7 @@
 
     <!-- Custom styles for this template -->
     <link href="/assets/css/style.css" rel="stylesheet">
-    <link href="/assets/css/font-awesome.min.css" rel="stylesheet">
+    <link href="/assets/css/fontawesome-all.css" rel="stylesheet">
 
     <!-- add favicon -->
     <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
@@ -59,9 +59,7 @@
         <li ><a href="/portfolio/">PROJECTS</a></li>
         <li ><a href="/pubs/">PUBLICATIONS</a></li>
         <li><a href="https://thoughtsintothevoidblog.wordpress.com">BLOG</a></li>
-        <!--<li ><a href="/blog/">BLOG</a></li>-->
-        <li ><a href="/contact/">
-          <i class="fa fa-pencil-square-o" style="font-size:20px"></i></a></li>
+        <li ><a href="/contact/"><i class="far fa-edit fa-lg"></i></a></li>
       </ul>
     </div><!--/.nav-collapse -->
   </div>
@@ -223,6 +221,20 @@
 <script src="/assets/js/custom.js"></script>
 <script src="/assets/js/path.js"></script>
 <script src="/assets/js/hotspots.js"></script>
+
+<script>
+  $('.multi-item-carousel .item').each(function(){
+    var next = $(this).next();
+    if (!next.length) next = $(this).siblings(':first');
+    next.children(':first-child').clone().appendTo($(this));
+  });
+  $('.multi-item-carousel .item').each(function(){
+    var prev = $(this).prev();
+    if (!prev.length) prev = $(this).siblings(':last');
+    prev.children(':nth-last-child(2)').clone().prependTo($(this));
+  });
+</script>
+
 
 
 <script>

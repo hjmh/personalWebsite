@@ -319,27 +319,101 @@ a:focus {
 }
 
 /*	################################################################
-	Customized panel collapse
+	Special hover effects
 ################################################################# */
+.hovereffect {
+  width: 100%;
+  height: 100%;
+  float: left;
+  overflow: hidden;
+  position: relative;
+  text-align: center;
+  cursor: default;
+  background: #42b078;
+}
 
+.hovereffect .overlay {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  overflow: hidden;
+  top: 0;
+  left: 0;
+  padding: 50px 20px;
+}
+
+.hovereffect img {
+  display: block;
+  position: relative;
+  max-width: none;
+  width: calc(100% + 20px);
+  -webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
+  transition: opacity 0.35s, transform 0.35s;
+  -webkit-transform: translate3d(-10px,0,0);
+  transform: translate3d(-10px,0,0);
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+}
+
+.hovereffect:hover img {
+  opacity: 0.4;
+  filter: alpha(opacity=40);
+  -webkit-transform: translate3d(0,0,0);
+  transform: translate3d(0,0,0);
+}
+
+.hovereffect h2 {
+  text-transform: uppercase;
+  color: #fff;
+  text-align: center;
+  position: relative;
+  font-size: 17px;
+  overflow: hidden;
+  padding: 0.5em 0;
+  background-color: transparent;
+}
+
+.hovereffect h2:after {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 2px;
+  background: #fff;
+  content: '';
+  -webkit-transition: -webkit-transform 0.35s;
+  transition: transform 0.35s;
+  -webkit-transform: translate3d(-100%,0,0);
+  transform: translate3d(-100%,0,0);
+}
+
+.hovereffect:hover h2:after {
+  -webkit-transform: translate3d(0,0,0);
+  transform: translate3d(0,0,0);
+}
+
+.hovereffect a, .hovereffect p {
+  color: #FFF;
+  opacity: 0;
+  filter: alpha(opacity=0);
+  -webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
+  transition: opacity 0.35s, transform 0.35s;
+  -webkit-transform: translate3d(100%,0,0);
+  transform: translate3d(100%,0,0);
+}
+
+.hovereffect:hover a, .hovereffect:hover p {
+  opacity: 1;
+  filter: alpha(opacity=100);
+  -webkit-transform: translate3d(0,0,0);
+  transform: translate3d(0,0,0);
+}
 
 
 /*	################################################################
 	Title image on home page
 ################################################################# */
-/*
-.homepic {
-	width: 100%;
-  height: 700px;
-	background-image: url("/assets/img/titleWebsitePic_altCol.tiff");
-	background-size: contain;
-	background-repeat: no-repeat;
-}
 
-.homepic:hover {
-	background-image: url("/assets/img/titleWebsitePic_greys_dark.tiff");
-}
-*/
 body {
   font-family:
     -apple-system, BlinkMacSystemFont,
@@ -393,15 +467,22 @@ img {
   position: absolute;
   z-index: 1;
   display: inline-block;
-  width: 30px;
-  height: 30px;
+  width: 25px;
+  height: 25px;
   color: #fff;
-  line-height: 30px;
+  line-height: 25px;
   text-align: center;
   text-decoration: none;
   border-radius: 50%;
   background-color: #46b9b9;
+	opacity: 0.8;
   transition: all 300ms;
+}
+
+.marker:hover {
+  text-decoration: none;
+	opacity: 1;
+	background-color: #ddb388;
 }
 
 .marker1 {
@@ -497,7 +578,7 @@ img {
   }
 }
 /*	################################################################
-	Parallax on research/portfolio page
+	Parallax on research page
 ################################################################# */
 
 .container-parallax{
@@ -545,24 +626,124 @@ img {
 }
 
 /*	################################################################
-	SVG on index page
+	custom carousel
 ################################################################# */
-/*
-svg { height: 50vw; }
-circle {
-	fill: #ddb388;
-	transition: 1s fill;
-}
-circle:hover, polygon:hover, path:hover {
-	fill: #ddb388;
-	transition: 0.5s fill;
+
+.verticalGallery > img {
+  display: block;
+  max-width: 100%;
+  height: 300px;
+  max-height: 350px;
+  margin: 0 auto;
 }
 
-.svg-text {
-	font-family: 'Raleway', sans-serif;
-	font-weight: 550;
+/*
+* { box-sizing: border-box; }
+
+body { font-family: sans-serif; }
+
+.carousel {
+  background: #EEE;
+}
+
+.carousel-cell {
+  width: 66%;
+  height: 200px;
+  margin-right: 10px;
+  background: #8C8;
+  border-radius: 5px;
+  counter-increment: carousel-cell;
+}
+
+/* cell number */
+/*
+.carousel-cell:before {
+  display: block;
+  text-align: center;
+  content: counter(carousel-cell);
+  line-height: 200px;
+  font-size: 80px;
+  color: white;
 }
 */
+
+.carousel {
+    overflow: hidden;
+}
+.carousel-inner {
+    width: 150%;
+    left: -25%;
+}
+.carousel-inner .active.left {
+    left: -30%;
+}
+.carousel-inner .next {
+    left: 30%;
+}
+.carousel-inner .prev {
+    left: -30%;
+}
+.carousel-control.left, .carousel-control.right {
+    background: rgba(255, 255, 255, 0.3);
+    width: 25%;
+}
+
+.carousel-inner > .item > img,
+.carousel-inner > .item > a > img {
+  display: block;
+  max-width: 100%;
+  height: 300px;
+  max-height: 350px;
+  margin: 0 auto;
+}
+
+.carousel-indicators li {
+  display: inline-block;
+  width: 10px;
+  height: 10px;
+  margin: 1px;
+  text-indent: -999px;
+  cursor: pointer;
+  background-color: #ccc \9;
+
+  border: 1px solid #666;
+  border-radius: 10px;
+}
+
+/*
+.multi-item-carousel {
+  overflow: hidden;
+}
+.multi-item-carousel img {
+  height: auto;
+  width: 100%;
+}
+.multi-item-carousel .carousel-control.left,
+.multi-item-carousel .carousel-control.right {
+    background: rgba(255, 255, 255, 0.3);
+    width: 25%;
+}
+.multi-item-carousel .carousel-inner {
+  width: 150%;
+  left: -25%;
+}
+.carousel-inner > .item.next,
+.carousel-inner > .item.active.right {
+    -webkit-transform: translate3d(33%, 0, 0);
+    transform: translate3d(33%, 0, 0);
+}
+.carousel-inner > .item.prev,
+.carousel-inner > .item.active.left {
+    -webkit-transform: translate3d(-33%, 0, 0);
+    transform: translate3d(-33%, 0, 0);
+}
+.item__third {
+  float: left;
+  width: 33.33333333%;
+}
+*/
+
+
 
 /*	################################################################
 	SITE WRAPS
@@ -810,29 +991,6 @@ circle:hover, polygon:hover, path:hover {
 	font-size: 10pt;
 	line-height: 20px;
 	text-align: left;
-}
-
-
-.carousel-inner > .item > img,
-.carousel-inner > .item > a > img {
-  display: block;
-  max-width: 100%;
-  height: 300px;
-  max-height: 350px;
-  margin: 0 auto;
-}
-
-.carousel-indicators li {
-  display: inline-block;
-  width: 10px;
-  height: 10px;
-  margin: 1px;
-  text-indent: -999px;
-  cursor: pointer;
-  background-color: #ccc \9;
-  background-color: rgba(0, 0, 0, 0);
-  border: 1px solid #666;
-  border-radius: 10px;
 }
 
 .ctitle {
