@@ -1,7 +1,18 @@
 
-<div class="container" >
+<div class="container mtb">
+  <p>
+    I spent the last few years developing behavioral paradigms for studying
+    visually-guided navigation in head-fixed walking flies. These paradigms
+    were designed to be compatible with two-photon calcium imaging. At the
+    moment I’m working on porting these paradigms to an imaging rig with the
+    goal of combining behavioral and neurophysiological studies of navigation.
+  </p>
+  <br>
+</div>
+
+<div class="container mtb">
   <h3 class="centered">
-    Find out more about specific projects
+    Past projects
   </h3>
   <br>
 
@@ -11,15 +22,15 @@
       <a href="#" data-filter=".fly">Flies</a>
       <a href="#" data-filter=".vr">Virtual Reality</a>
       <a href="#" data-filter=".treadmill">Treadmill</a>
-      <a href="#" data-filter=".modeling">Modeling</a>
+      <!-- <a href="#" data-filter=".modeling">Modeling</a> -->
   </div>
 
   <div id="portfoliowrap">
       <div class="portfolio-centered">
           <div class="recentitems portfolio">
               {% for project in site.projects limit:include.limit %}
-              <div class="{{ project.topics }}">
-                  <div class="portfolio-item">
+                <div class="{{ project.topics }}">
+                    <div class="portfolio-item">
                         <div class="he-wrap tpl6">
                           <img src="{{ "/assets/img/project/" | prepend: site.baseurl }}{{ project.img }}" alt="">
                           <div class="he-view">
@@ -31,8 +42,8 @@
                               </div><!-- he bg -->
                             </div><!-- he view -->
                          </div><!-- he wrap -->
-                      </div><!-- end col-12 -->
-                  </div><!-- tags -->
+                    </div><!-- end col-12 -->
+                </div><!-- tags -->
               {% endfor %}
           </div><!-- portfolio -->
           <div class="container mtb" >

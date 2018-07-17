@@ -6,23 +6,22 @@ permalink: /about/
 
 <div class="container mtb">
     <div class="row">
-        <div class="col-lg-3">
-          <img class="img-responsive" src="{{ "/assets/img/profilePic.jpg" | prepend: site.baseurl }}" alt="Hannah Haberkern" width=350px>
-          </br>
+        <div class="col-lg-4">
+          <img class="img-responsive" src="{{ "/assets/img/profilePic.jpg" | prepend: site.baseurl }}" alt="Hannah Haberkern" width=340px>
+            </br>
             <h4>Education</h4>
             <div class="hline"></div>
             <div id="experience">
-              <p> 2012-2017 | <b>PhD in Zoology</b> </br> University of Cambridge, UK / HHMI Janelia Research Campus, USA</p>
+              <p> 2012-2017 | <b>PhD in Neuroscience</b> </br> University of Cambridge, UK / HHMI Janelia Research Campus, USA</p>
               <p> 2009-2012 | <b>Master in Computational Biology and Bioinformatics</b> </br> ETH Zürich, Switzerland </p>
               <p> 2006-2009 | <b>Bachelor in Biomedicine</b> </br> Julius Maximilians Universität Würzburg, Germany </p>
             </div>
             </br>
-            <!--
-            <h4>Research experience</h4>
-            <div class="hline"></div>
-            -->
+            <p><a href="http://localhost:4000/assets/CV_HHaberkern.pdf" target="_blank" class="btn btn-theme">Download CV</a></p>
+            </br>
+            </br>
         </div>
-        <div class="col-lg-8">
+        <div class="col-lg-7">
           <h3>About Me</h3>
 
           <p>I'm a postdoctoral associate working in
@@ -34,7 +33,7 @@ permalink: /about/
           </p>
 
           <p>
-            In my free time, I like sewing and painting, both of which help me
+            In my free time, I like to sew and paint, both of which help me
             to recharge and relax. Those interested in <b>sewing</b>, I'd encourage to check out
             <a href="https://thoughtsintothevoidblog.wordpress.com" target="_blank"> my blog</a>,
             where I share some of my sewing projects.
@@ -44,44 +43,171 @@ permalink: /about/
             visiting a new botanical garden) and observing animals – particularly birds and insects.
           </p>
 
-          <p>
-            Since I got diagnosed with a chronic condition called <b>Sjögrens Syndrome</b>
-            I am also trying to raise awareness for this poorly understood, "invisible disease".
-
-            Briefly, Sjögren’s (“SHOW-grins”) is a systemic autoimmune disease
-            that affects the entire body. It is caused by the immune system attacking
-            your own organs. In case of Sjögren's typically the tear and salivary glands
-            are attacked and damaged leading to dry eyes and mouth. However, the disease
-            may also cause the immune system to attack other organs and it can cause
-            profound fatigue, joint pain, nausea, dizziness, headaches, neuropathies and lymphomas.
-            <br><br>
-
-            Sjögren's is a chronic disease and there is no cure at present.
-            It is hard to put in words what it means to live with such a chronic inflammatory
-            disease. One of the biggest challenges for me was to get used to unpredictability of
-            my physical condition: the symptoms listed above and more can flare up
-            suddenly and then disappear completely, making it sometimes difficult to plan.
-            Small disturbances such as lack of sleep or a light cold can now knock
-            me out for several days. Further, the ever-returning symptoms
-            are emotionally draining, as they can cause the perception that there
-            is no progress, no healing. <br><br>
-
-            I have been fortunate to be diagnosed soon after the first symptoms
-            appeared and I have gotten treatment that has helped me to return to a
-            normal life. However, the medication I take has risks and someday I may
-            need to stop taking it. There is also no guarantee that it will continue
-            to work for me.<br>
-            Generally, this disease, like other autoimmune conditions,
-            is characterized by a shocking lack of understanding, although many
-            people are affected (4 million Americans according to the Sjögren’s
-            foundation). 90 % of patients are women. My hope is that awareness
-            will eventually increase and more research will lead to faster
-            diagnosis, better treatment and maybe even prevention.
-            For more information, I recommend the official website of the
-            <a href="https://www.sjogrens.org" target="_blank">Sjögrens Syndrome Foundation</a>.
-          </p>
-
-          <p><br/><a href="/contact/" class="btn btn-theme">Contact me</a></p>
         </div>
     </div><! --/row -->
 </div><! --/container -->
+
+<div id="mybanner">
+  <div class="container">
+      <h4 style="text-align: center"> Click on the <strong>hotspots</strong> in the image below to find out more about some
+       important aspects of my life.
+     </h4>
+  </div>
+</div> <!-- /container -->
+
+<div class="map">
+  <div class="map-item map-item1">
+    <a class="marker marker1" href="#marker1"><i class="far fa-bug"></i></span></a>
+    <aside id="marker1" class="map-popup">
+      <h4 class="popup-title">My research</h4>
+      <p>Broadly speaking, I am interested in understanding how environment and past experiences shape
+        the behavior of animals. I do experiments in the lab, but also spend a lot of time on my computer analyzing data.</p>
+      <p><a href="{{"/research/" | prepend: site.baseurl }}">More science!</a></p>
+    </aside>
+  </div>
+
+  <div class="map-item map-item2">
+    <a class="marker marker2" href="#marker2"><i class="fas fa-heart"></i></a>
+    <aside id="marker2" class="map-popup">
+      <h4 class="popup-title">Some sewing projects</h4>
+      <p>If you like to learn more, visit my blog! Also, you might have noticed: I like orange, turquoise and green.</p>
+      <p><a href="https://thoughtsintothevoidblog.wordpress.com"> To my blog</a></p>
+    </aside>
+  </div>
+
+  <div class="map-item map-item3">
+    <a class="marker marker3" href="#marker3"><i class="fas fa-leaf"></i></a>
+    <aside id="marker3" class="map-popup">
+      <h4 class="popup-title">I love plants!</h4>
+      <p>Having them around me in my apartment, watching them grow in my garden
+        or admiring strange species in parks and botanical gardens. </p>
+    </aside>
+  </div>
+
+  <div class="map-item map-item4">
+    <a class="marker marker4" href="#marker4"><i class="fas fa-cut"></i></a>
+    <aside id="marker4" class="map-popup">
+      <h4 class="popup-title">Sewing materials</h4>
+      <p>My sewing machine and a small selection of my fabric stash.
+        Sadly, I don't have too much time to sew right now. </p>
+    </aside>
+  </div>
+
+  <div class="map-item map-item5">
+    <a class="marker marker5" href="#marker5"><i class="far fa-tint"></i> </a>
+    <aside id="marker5" class="map-popup">
+      <h4 class="popup-title">Dry eyes etc...</h4>
+      <p>Due to a chronic autoimmune condition called Sjögren's Syndrome,
+        I have to take daily medication and get plenty of rest.</p>
+        <p><a href="#Sjogrens" >Learn about Sjögren's Syndrome!</a></p>
+    </aside>
+  </div>
+
+  <div class="map-item map-item6">
+    <a class="marker marker6" href="#marker6"><i class="fas fa-paint-brush"></i></a>
+    <aside id="marker5" class="map-popup text-left">
+      <h4 class="popup-title">Painting and photography</h4>
+      <p>I enjoy closely observing animals, plants and landscapes, which is – I think –
+        why I'm drawn to both painting and photography. </p>
+    </aside>
+  </div>
+
+  <img src="/assets/img/titleWebsitePic_altCol.tiff"alt="" style="filter: grayscale(10%)">
+</div>
+<div id="mybanner">
+  <div class="container">
+    <br>
+    <br>
+  </div>
+</div> <!-- /container -->
+
+<div class="container">
+  <div class="row" id="Sjogrens">
+    <div class="col-lg-10 col-lg-offset-1">
+      <br>
+      <br>
+      <h4>Living with a chronic, "invisible" autoimmune condition</h4>
+      <br>
+      <p>
+        Since I got diagnosed with a chronic condition called <b>Sjögrens Syndrome</b>
+        I am trying to raise awareness for this poorly understood, "invisible disease".
+
+        Briefly, Sjögren’s (“SHOW-grins”) is a systemic autoimmune disease
+        that affects the entire body. It is caused by the immune system attacking
+        your own organs. In case of Sjögren's typically the tear and salivary glands
+        are attacked and damaged leading to dry eyes and mouth. However, the disease
+        may also cause the immune system to attack other organs and it can cause
+        profound fatigue, joint pain, nausea, dizziness, headaches, neuropathies and lymphomas.
+        <br><br>
+
+        Sjögren's is a chronic disease and there is no cure at present.
+        It is hard to put in words what it means to live with such a chronic inflammatory
+        disease. One of the biggest challenges for me was to get used to unpredictability of
+        my physical condition: the symptoms listed above and more can flare up
+        suddenly and then disappear completely, making it sometimes difficult to plan.
+        Small disturbances such as lack of sleep or a light cold can now knock
+        me out for several days. Further, the ever-returning symptoms
+        are emotionally draining, as they can cause the perception that there
+        is no progress, no healing. <br><br>
+
+        I have been fortunate to be diagnosed soon after the first symptoms
+        appeared and I have gotten treatment that has helped me to return to a
+        normal life. However, the medication I take has risks and someday I may
+        need to stop taking it. There is also no guarantee that it will continue
+        to work for me. Generally, this disease, like other autoimmune conditions,
+        is characterized by a shocking lack of understanding, although many
+        people are affected (4 million Americans according to the Sjögren’s
+        foundation). 90 % of patients are women. My hope is that awareness
+        will eventually increase and more research will lead to faster
+        diagnosis, better treatment and maybe even prevention.
+        For more information, I recommend the official website of the
+        <a href="https://www.sjogrens.org" target="_blank">Sjögrens Syndrome Foundation</a>.
+      </p>
+      <br>
+    </div>
+  </div>
+</div><! --/container -->
+
+
+<!-- Bottom wrap -->
+<div id="parallaxwrap" class="tinted-image">
+    <div class="container">
+      </br>
+      </br>
+      </br>
+      </br>
+      </br>
+      </br>
+    </div><!--/container -->
+</div><!--/service -->
+
+
+<!-- /container
+<div id="mybanner">
+  <div class="container">
+      <h4 style="text-align: center"> A selection of photographs I took.
+     </h4>
+  </div>
+</div>
+
+<div id="photogal">
+  <div class="galrow">
+    <div class="galcol">
+      <img src="/assets/img/plantgal/janeliaButterfly.jpg" style="width:100%">
+      <img src="/assets/img/plantgal/darmstadtKunstlerKol.jpg" style="width:100%">
+    </div>
+    <div class="galcol">
+      <img src="/assets/img/plantgal/cambridgeDeadLeaf2.jpg" style="width:100%">
+      <img src="/assets/img/plantgal/cambridgeSmallFlower.jpg" style="width:100%">
+    </div>
+    <div class="galcol">
+      <img src="/assets/img/plantgal/cambridgeTulip.jpg" style="width:100%">
+      <img src="/assets/img/plantgal/cambridgeDeadLeaf.jpg" style="width:100%">
+    </div>
+    <div class="galcol">
+      <img src="/assets/img/plantgal/cambridgeTulip.jpg" style="width:100%">
+      <img src="/assets/img/plantgal/rocks.jpg" style="width:100%">
+    </div>
+  </div>
+</div>
+-->

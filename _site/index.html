@@ -17,6 +17,8 @@
     <!-- Custom styles for this template -->
     <link href="/assets/css/style.css" rel="stylesheet">
     <link href="/assets/css/fontawesome-all.css" rel="stylesheet">
+    <link href="/assets/css/prettyPhoto.css" rel="stylesheet">
+    <link href="/assets/css/nv.d3.css" rel="stylesheet">
 
     <!-- add favicon -->
     <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
@@ -41,7 +43,7 @@
         <span class="icon-bar"></span>
       </button>
       <a class="navbar-brand" href="/">
-        <img src="/assets/ico/HHicon.png" alt="Hannah Haberkern" height=auto>
+        <img src="/assets/ico/HHicon.png" alt="Hannah Haberkern"x>
       </a>
     </div>
     <div class="navbar-collapse collapse navbar-right">
@@ -58,7 +60,7 @@
         </li>
         <li ><a href="/portfolio/">PROJECTS</a></li>
         <li ><a href="/pubs/">PUBLICATIONS</a></li>
-        <li><a href="https://thoughtsintothevoidblog.wordpress.com">BLOG</a></li>
+        <li><a href="https://thoughtsintothevoidblog.wordpress.com" target="_blank">BLOG</a></li>
         <li ><a href="/contact/"><i class="far fa-edit fa-lg"></i></a></li>
       </ul>
     </div><!--/.nav-collapse -->
@@ -66,154 +68,170 @@
 </div>
 
 
-            <div id="headerwrap">
+            <div id="headerwrap"  class="tinted-image">
+  <div class="bannercover">
     <div class="container">
         <div class="row">
-            <div class="col-lg-8 col-lg-offset-2">
-                <h1>Welcome!</h1>
-                <h3>This is the personal website of Hannah Haberkern.</br>
-                  I'm a neuroscientist studying visually guided navigation in fruit flies.
-                  Activities I enjoy in my free time include sewing, gardening and observing animals.
+            <div class="col-lg-6 col-lg-offset-3">
+                <h1 style="text-transform: uppercase;">Hannah Haberkern</h1>
+                <div class="ani-line"></div>
+                <h3 style="color: white; font-weight: 500;">Welcome to my personal website.</h3>
+                <h3 class="fadetext" style="font-size:20px;">I'm a neuroscientist studying visually guided navigation.</br>
+                  I also enjoy sewing, gardening and programming. </br>
+                  Or I like to simply look at plants and animals.
                 </h3>
                 </br>
-                <!-- TODO: add more description here -->
+                </br>
+
+                <section class="fadetextnext">
+                  <h3 style="color:white; font-size:20px;">
+                    Learn more
+                  </h3>
+                  <a href="#slide" id="top" style="color:#ffccb3"><i class="fas fa-chevron-down fa-2x"></i></a>
+                </section>
+
             </div>
         </div><!-- /row -->
     </div> <!-- /container -->
+  </div>
 </div><!-- /headerwrap -->
 
+<section id="slide">
+  <div id="mybanner">
 
-  <div id="service">
+  </div> <!-- /container -->
+</section>
+
+<div id="mybanner">
+  <div class="container">
+    <h4 style="font-size: 20px;">
+      It is a sign of non love that is to say a sin, to form a finished image of ones neighbors.
+    </h4>
+    <h4 style="color: #394e60">
+      Jedes Bildnis ist eine Sünde. Es ist genau das Gegenteil von Liebe [...]
+      Wenn man einen Menschen liebt, so läßt man ihm doch jede Möglichkeit offen
+      und ist trotz allen Erinnerungen einfach bereit, zu staunen,
+      immer wieder zu staunen, wie anders er ist, wie verschiedenartig und
+      nicht einfach so, nicht ein fertiges Bildnis [...]
+    </h4>
+    <h5 class="quoteSouce">
+      - Max Frisch, <i>Stiller</i>
+    </h5>
+  </div>
+</div> <!-- /container -->
+
+
+  <div class="container mtb">
+  <div class="row">
+    <div class="landcontainer">
+      <div class="landitem">
+        <img class="img-responsive" src="/assets/img/profilePic.jpg" alt="Hannah Haberkern">
+      </div>
+      <div class="landitem">
+        <h3>About Me</h3>
+        <div class="hline"></div>
+        <p>Hi, I'm Hannah. I'm a neuroscientist interested in understanding animal behavior, in particular in the context of navigation. If I'm not in the lab or analysing data, I like to sew, program, garden or observe animals.</p>
+        <p>
+          <a href="/about/"> <i class="fas fa-angle-right"></i> More about me </a>
+        </p>
+        <p>
+          <a href="http://localhost:4000/assets/CV_HHaberkern.pdf">
+            <i class="fas fa-angle-right"></i> My CV </a>
+        </p>
+      </div>
+    </div>
+  </div>
+  <div class="row">
+    <div class="landcontainer_rev">
+      <div class="landitem">
+        <h3>Research</h3>
+        <div class="hline"></div>
+        <p>I'm currently working as postdoctoral associate in
+          <a href="https://www.janelia.org/lab/jayaraman-lab" target="_blank" >Vivek Jayaraman's lab</a>
+          at <a href="https://www.janelia.org/" target="_blank">Janelia</a>.
+          I am interested in understanding how animals navigate through space. Currently I invstigate
+           how visually guided navigation in walking fruit flies can change based on past experiences.
+           Previous projects involved different aspects of navigation in adult and larval fruit flies
+           and crickets.
+        </p>
+        <p>
+          <a href="/research/"><i class="fas fa-angle-right"></i>
+            Research interests
+          </a>
+        </p>
+        <p>
+          <a href="/portfolio/"><i class="fas fa-angle-right"></i>
+            Project descriptions
+          </a>
+        </p>
+
+      </div>
+      <div class="landitem">
+        <img class="img-responsive" src="/assets/img/home/researchPic.jpg" alt="Research">
+      </div>
+    </div>
+  </div>
+  <div class="row">
+    <div class="landcontainer">
+      <div class="landitem">
+        <img class="img-responsive" src="/assets/img/home/datavisPic.jpg" alt="Sewing">
+      </div>
+      <div class="landitem">
+        <h3>(Data) Visualisation</h3>
+        <div class="hline"></div>
+        <p> One of my favorite parts of quantitatively studying behavior is to come up with ways
+          to visualise the measured variables. In my experience, finding the "right" way of looking
+          at the data often leads to better understanding of what is going on.</p>
+        <p>
+          <a href="/portfolio/"><i class="fas fa-angle-right"></i>
+            Visualising behavior
+          </a>
+        </p>
+      </div>
+    </div>
+  </div>
+  <div class="row">
+    <div class="landcontainer_rev">
+      <div class="landitem">
+        <h3>Sewing</h3>
+        <div class="hline"></div>
+        <p> I greatly enjoy designing and sewing clothes and other objects made from fabric.
+          I learned how to sew from my mother and grandmother and many of my favourite
+          childhood memories evolve around this activity.
+          These days sewing serves as a compensatory activity to research —
+          as a creative outlet and by making me feel productive.</p>
+        <p>
+          <a href="https://thoughtsintothevoidblog.wordpress.com"><i class="fas fa-angle-right"></i>
+            To my blog
+          </a>
+        </p>
+      </div>
+      <div class="landitem">
+        <img class="img-responsive" src="/assets/img/home/fabricPic.jpg" alt="Sewing">
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<div id="mybanner">
+</div> <!-- /container -->
+
+
+
+
+<!-- Bottom wrap -->
+<div id="parallaxwrap" class="tinted-image">
     <div class="container">
-
+      </br>
+      </br>
+      </br>
+      </br>
+      </br>
+      </br>
     </div><!--/container -->
 </div><!--/service -->
 
-<div class="map">
-
-  <div class="map-item map-item1">
-    <a class="marker marker1" href="#marker1"><i class="far fa-bug"></i></span></a>
-    <aside id="marker1" class="map-popup">
-      <h4 class="popup-title">My research</h4>
-      <p>Broadly speaking, I am interested in understanding how environment and past experiences shape
-        the behavior of animals. I do experiments in the lab, but also spend a lot of time on my computer analyzing data.</p>
-      <p><a href="/research/">More science!</a></p>
-    </aside>
-  </div>
-
-  <div class="map-item map-item2">
-    <a class="marker marker2" href="#marker2"><i class="fas fa-heart"></i></a>
-    <aside id="marker2" class="map-popup">
-      <h4 class="popup-title">Some sewing projects</h4>
-      <p>If you like to learn more, visit my blog! Also, you might have noticed: I like orange, turquoise and green.</p>
-      <p><a href="https://thoughtsintothevoidblog.wordpress.com"> --> To my blog</a></p>
-    </aside>
-  </div>
-
-  <div class="map-item map-item3">
-    <a class="marker marker3" href="#marker3"><i class="fas fa-leaf"></i></a>
-    <aside id="marker3" class="map-popup">
-      <h4 class="popup-title">I love plants!</h4>
-      <p>Having them around me in my apartment, watching them grow in my garden
-        or admiring strange species in parks and botanical gardens. </p>
-    </aside>
-  </div>
-
-  <div class="map-item map-item4">
-    <a class="marker marker4" href="#marker4"><i class="fas fa-cut"></i></a>
-    <aside id="marker4" class="map-popup">
-      <h4 class="popup-title">Sewing materials</h4>
-      <p>My sewing machine and a small selection of my fabric stash.
-        Sadly, I don't have too much time to sew right now. </p>
-    </aside>
-  </div>
-
-  <div class="map-item map-item5">
-    <a class="marker marker5" href="#marker5"><i class="far fa-tint"></i></a>
-    <aside id="marker5" class="map-popup">
-      <h4 class="popup-title">Dry eyes etc...</h4>
-      <p>Due to a chronic autoimmune condition called Sjögren's Syndrome,
-        I have to take daily medication.</p>
-        <p><a href="/about/" >More about Sjögren's Syndrome!</a></p>
-    </aside>
-  </div>
-
-  <div class="map-item map-item6">
-    <a class="marker marker6" href="#marker6"><i class="fas fa-paint-brush"></i></a>
-    <aside id="marker5" class="map-popup text-left">
-      <h4 class="popup-title">Painting and photography</h4>
-      <p>I enjoy closely observing animals, plants and landscapes, which is – I think –
-        why I'm drawn to both painting and photography. </p>
-    </aside>
-  </div>
-
-  <img src="/assets/img/titleWebsitePic_altCol.tiff"alt="">
-</div>
-
-<!--
-<div class="homepic">
-</div>
-
-<div class="view zoom">
-  <img src="/assets/img/titleWebsitePic_altCol.tiff" class="img-fluid" alt="Title image">
-</div>
-
--->
-<div class="container mtb">
-    <div class="row">
-      <div class="col-lg-8 col-lg-offset-2">
-        <p> In the image above I've collected a few things representing important aspects of my life.
-          I should add that neither my family nor partner feature here, though of course they play a huge role in my life!
-          Click on the hotspots to find out more!</p>
-        <!--
-        <h4>A little bit about me.</h4>
-
-        <p>Hi, I'm Hannah. I'm a neuroscientist trying to understand how animals navigate through space. If I'm not in the lab or analysing data, I like to travel, sew, garden or observe animals.</p>
-        <p><a href="/about/" class="btn btn-theme">More about me</a></p>
-        -->
-      </div>
-
-    </div><!--/row -->
-</div><!--/container -->
-
-
-<!-- <div id="twrap">
-    <div id="twrapback"></div>
-    <div class="container centered">
-        <div class="row">
-            <div class="col-lg-8 col-lg-offset-2">
-            <i class="fa fa-comment-o"></i>
-            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.</p>
-            <h4><br/>Marcel Newman</h4>
-            <p>WEB DESIGNER - BLACKTIE.CO</p>
-            </div>
-        </div><! --/row -->
-    </div><! --/container -->
-</div><! --/twrap -->
-<!--  <div id="cwrap">
-    <div class="container">
-        <div class="row centered">
-            <h3>OUR CLIENTS</h3>
-            
-                <div class="col-lg-3 col-md-3 col-sm-3">
-                    <img src="/assets/img/clients/client01.png" class="img-responsive">
-                </div>
-            
-                <div class="col-lg-3 col-md-3 col-sm-3">
-                    <img src="/assets/img/clients/client02.png" class="img-responsive">
-                </div>
-            
-                <div class="col-lg-3 col-md-3 col-sm-3">
-                    <img src="/assets/img/clients/client03.png" class="img-responsive">
-                </div>
-            
-                <div class="col-lg-3 col-md-3 col-sm-3">
-                    <img src="/assets/img/clients/client04.png" class="img-responsive">
-                </div>
-            
-        </div><! --/row -->
-    </div><! --/container -->
-</div><! --/cwrap -->
 
 
         <div id="footerwrap">
@@ -223,7 +241,7 @@
             <div class="col-lg-4">
                 <h4>About</h4>
                 <div class="hline-w"></div>
-                <p>Hi, I'm Hannah. I'm a neuroscientist trying to understand how animals navigate through space. If I'm not in the lab or analysing data, I like to travel, sew, garden or observe animals.</p>
+                <p>Hi, I'm Hannah. I'm a neuroscientist interested in understanding animal behavior, in particular in the context of navigation. If I'm not in the lab or analysing data, I like to sew, program, garden or observe animals.</p>
             </div>
           -->
             <div class="col-lg-4">
@@ -235,13 +253,18 @@
                 <p>
                     
                         <a href="https://github.com/hjmh" class="btn-social btn-outline" target="_blank">
-                          <i class="fa fa-github" aria-hidden="true"></i>
+                          <i class="fab fa-github fa-3x" aria-hidden="true"></i>
                           <span class="sr-only">github</span>
                         </a>
                     
                         <a href="https://www.linkedin.com/in/hannah-haberkern-24a73483" class="btn-social btn-outline" target="_blank">
-                          <i class="fa fa-linkedin" aria-hidden="true"></i>
+                          <i class="fab fa-linkedin fa-3x" aria-hidden="true"></i>
                           <span class="sr-only">linkedin</span>
+                        </a>
+                    
+                        <a href="https://scholar.google.com/citations?user=rTECIQwAAAAJ&hl=en&oi=ao" class="btn-social btn-outline" target="_blank">
+                          <i class="fab fa-scholar fa-3x" aria-hidden="true"></i>
+                          <span class="sr-only">scholar</span>
                         </a>
                     
                 </p>
@@ -251,7 +274,7 @@
                 <h4>Credits</h4>
                 <div class="hline-w"></div>
                 <p>
-                  This website was constructed using the Jekyll
+                  This website was constructed by (substantially) modifying the Jekyll
                   <a href="https://github.com/st4ple/solid-jekyll" target="_blank">
                   Solid theme</a>, which is distributed under the
                   <a href="https://creativecommons.org/licenses/by/3.0/" target="_blank">
@@ -259,7 +282,7 @@
                   The map on the contact page was taken from <a href="https://www.openstreetmap.org" target="_blank">
                   Open Steet Map</a> under the <a href="https://creativecommons.org/licenses/by-sa/2.0/" target="_blank">
                   CC BY-SA</a> license.
-                  For the image hotspots on the home page I used code from
+                  For the image hotspots on the about page I used code from
                   <a href="https://codepen.io/katartgraphics/pen/OmQZEe" target="_blank">here</a>.
 
                 </p>
@@ -278,6 +301,9 @@
 <script src="/assets/js/custom.js"></script>
 <script src="/assets/js/path.js"></script>
 <script src="/assets/js/hotspots.js"></script>
+<script src="/assets/js/Chart.min.js"></script>
+<!--<script src="/assets/js/Chart.Streamgraph.S.js"></script>-->
+<script src="/assets/js/mycharts.js"></script>
 
 <script>
   $('.multi-item-carousel .item').each(function(){
@@ -290,6 +316,21 @@
     if (!prev.length) prev = $(this).siblings(':last');
     prev.children(':nth-last-child(2)').clone().prependTo($(this));
   });
+</script>
+
+<script>
+$('a[href^="#slide"]').on('click', function(event) {
+
+    var target = $(this.getAttribute('href'));
+
+    if( target.length ) {
+        event.preventDefault();
+        $('html, body').stop().animate({
+            scrollTop: target.offset().top
+        }, 1000);
+    }
+
+});
 </script>
 
 

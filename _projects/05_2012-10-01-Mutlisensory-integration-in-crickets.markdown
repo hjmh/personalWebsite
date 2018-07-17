@@ -29,7 +29,7 @@ Phonotaxis in natural environments, which require the integration of multiple se
 
 <i class="fas fa-users fa-lg" style="color:{{ site.colors.secondary }};"></i>
 <span style="display:inline-block; width: 10px;"></span>
-This project was part of my PhD project, carried out in the lab of [Berthold Hedwig](https://www.neuroscience.cam.ac.uk/directory/profile.php?bh202).
+This project was carried out in the first year of my PhD in the lab of my supervisor [Berthold Hedwig](https://www.neuroscience.cam.ac.uk/directory/profile.php?bh202).
 
 <span style="display:block; height: 10px;"></span>
 

@@ -27,8 +27,17 @@ During my time in the lab I tried out a few different paradigms differing in the
 
 These unsuccessful attempts of conditioning larva do not necessarily imply that larvae are incapable of operant learning. One possibility, for example, is that we picked out movements as “behaviors” that do not correspond to modules that can easily be associated with a consequence. Another possibility is that the unspecific adaptation of reducing turns was effective enough to reduce experience of punishment, that the animals did not experience of the punishment was not sufficient to learn the association between behavior and consequence.
 
-<b>People:</b><br>
-I did this work during my bachelor thesis project in the lab of [Bertram Gerber](https://www.neuroscience-magdeburg.de/research/professor-jazz/bertram-gerber/) working closely with [Claire Eschbach](https://www.janelia.org/people/claire-eschbach).
+While we were not able to operantly train larvae with vibration stimuli, my experiments led to the conclusion that vibration stimuli are aversive and others were able to show that olfactory conditioning with vibration is possible (see publication below).
 
-<b>Read more:</b><br>
-Eschbach C, Cano C, Haberkern H, Schraut K, Guan C, Triphan T, Gerber B (2011). [Associative learning between odorants and mechanosensory punishment in larval <i>Drosophila</i>.](http://jeb.biologists.org/content/214/23/3897)<i>
+---
+<span style="display:block; height: 15px;"></span>
+
+<i class="fas fa-users fa-lg" style="color:{{ site.colors.secondary }};"></i>
+<span style="display:inline-block; width: 6px;"></span>
+This work was carried out in [Bertram Gerber's](https://www.neuroscience-magdeburg.de/research/professor-jazz/bertram-gerber/) lab, working closely with [Claire Eschbach](https://www.janelia.org/people/claire-eschbach).
+
+<span style="display:block; height: 10px;"></span>
+
+<i class="fas fa-file-alt fa-lg" style="color:{{ site.colors.secondary }};"></i>
+<span style="display:inline-block; width: 12px;"></span>
+[Associative learning between odorants and mechanosensory punishment in larval <i>Drosophila</i>.](http://jeb.biologists.org/content/214/23/3897) Eschbach C, Cano C, Haberkern H, Schraut K, Guan C, Triphan T, Gerber B (2011).
