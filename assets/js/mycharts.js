@@ -6,8 +6,8 @@ var biomedicine = [8, 10, 10, 10, 8, 4, 5, 3, 2, 2, 1, 2, 3, 3];
 var behavior = [2, 3, 4, 6, 7, 4, 7, 10, 10, 10, 10, 10, 10, 10];
 var insects = [0, 0, 0, 5, 3, 3, 8, 8, 8, 8, 8, 8, 8, 8];
 var compbio = [0, 0, 0, 2, 8, 10, 9, 4, 1, 1, 1, 3, 5, 5];
-var learning = [0, 0, 3, 5, 2, 0, 1, 2, 4, 5, 7, 8, 9, 10];
-var physio = [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 2, 5];
+var learning = [0, 0, 3, 5, 2, 0, 1, 2, 4, 5, 7, 8, 7, 7];
+var physio = [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 2, 5, 7];
 
 const colors = {
   primarycol: {
@@ -86,7 +86,7 @@ var newChart = new Chart(ctx, {
             pointRadius: 0,
             data: compbio,
           },{
-            label: "Learning",
+            label: "Learning and memory",
             backgroundColor: colors.salmon.fill,
             borderColor: colors.salmon.stroke,
             borderWidth: 2,
@@ -104,10 +104,15 @@ var newChart = new Chart(ctx, {
 
     // Configuration options go here
     options: {
+      title: {
+        display: true,
+        text: "Evolution of scientific interests"
+      },
       scales: {
         yAxes: [{
           stacked: true,
-        }]
+          display: false
+        }],
       },
       animation: {
         duration: 750,

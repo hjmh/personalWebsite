@@ -50,6 +50,8 @@ social:
     url: https://github.com/hjmh
   - title: linkedin
     url: https://www.linkedin.com/in/hannah-haberkern-24a73483
+  - title: instagram
+    url: https://www.instagram.com/hannahquilts/
   - title: scholar
     url: https://scholar.google.com/citations?user=rTECIQwAAAAJ&hl=en&oi=ao
 
@@ -66,46 +68,7 @@ email: haberkernh-at-janelia.hhmi.org
 
 ### GENERAL DATA FOR VARIOUS LOCATIONS ###
 
-# Members information. Shown on About page.
-members:
-  - name: Mark Webber
-    position: CEO
-    text: Lorem Ipsum is simply dummy text of the printing and typesetting industry.
-    img: team01.jpg
-    social:
-      - title: envelope #use for email address
-        url: mailto:name@domain.com
-      - title: twitter
-        url: http://twitter.com/handle
-  - name: Paul Jameson
-    position: Lead Designer
-    text: Lorem Ipsum is simply dummy text of the printing and typesetting industry.
-    img: team02.jpg
-    social:
-      - title: envelope #use for email address
-        url: mailto:name@domain.com
-      - title: twitter
-        url: http://twitter.com/handle
-
 # Short text about your company. Shown in footer on every page and also separately on Home and Contact page.
-about: "Hi, I'm Hannah. I'm a neuroscientist interested in understanding animal behavior,
-in particular in the context of navigation. If I'm not in the lab or analysing data,
-I like to sew, program, garden or observe animals."
-
-# Clients information. Shown on Home and About pages.
-clients:
-  - name: dribbble
-    img: client01.png
-  - name: Code is Poetry
-    img: client02.png
-  - name: Vimeo
-    img: client03.png
-  - name: VimeoPro
-    img: client04.png
-
-# Testimonial content. Shown on Home and About page.
-testimonial:
-    message: "Douter de tout ou tout croire, ce sont deux solutions également commodes, qui l'une et l'autre nous dispensent de réfléchir."
-    message2: "To doubt everything, or, to believe everything, are two equally convenient solutions; both dispense with the necessity of reflection."
-    author: Henri Poincare
-    source: "La Science et l'Hypothèse, English translation: Science and Hypothesis (1905)"
+about: "Hi, I'm Hannah. I'm a neuroscientist interested in understanding (neural) mechanisms
+underlying animal behavior. If I'm not in the lab or analysing data,
+I like to sew, garden or observe animals."

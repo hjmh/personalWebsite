@@ -50,17 +50,17 @@
       <ul class="nav navbar-nav">
         <li ><a href="/">HOME</a></li>
         <li ><a href="/about/">ABOUT</a></li>
-        <li >
+        <li class="dropdown" >
           <a data-toggle="dropdown" data-hover="dropdown" href="/research/">RESEARCH <b class="caret"></b></a>
             <ul class="dropdown-menu dropdown-menu-left">
-              <!--<li class="divider"></li>-->
-              <li><a href="/research/">Interests</a></li>
+              <li><a href="/research/#">Interests</a></li>
+              <li><a href="/research/#projects">Projects</a></li>
               <li><a href="/research/#approach">Approach</a></li>
             </ul>
         </li>
-        <li class="active"><a href="/portfolio/">PROJECTS</a></li>
+        <!-- <li class="active"><a href="/portfolio/">PROJECTS</a></li> -->
         <li ><a href="/pubs/">PUBLICATIONS</a></li>
-        <li><a href="https://thoughtsintothevoidblog.wordpress.com" target="_blank">BLOG</a></li>
+        <li><a href="https://hannahsews.com" target="_blank">BLOG</a></li>
         <li ><a href="/contact/"><i class="far fa-edit fa-lg"></i></a></li>
       </ul>
     </div><!--/.nav-collapse -->
@@ -116,7 +116,7 @@
                               <div class="bg a0" data-animate="fadeIn">
                                   <a href="/projects/03_2014-01-01-Free-Walking-Fly-Navigation/">
                                     <h3 class="a1" data-animate="fadeInDown">Landmark interaction in freely walking flies</h3>
-                                    <p class="a1" data-animate="fadeInUp"> </p>
+                                    <p class="a1" data-animate="fadeInUp"> A ground-truth dataset to validate behavior in virtual reality. </p>
                                   </a>
                               </div><!-- he bg -->
                             </div><!-- he view -->
@@ -190,7 +190,7 @@
               
           </div><!-- portfolio -->
           <div class="container mtb" >
-            <p><br/><a href="/portfolio/" class="btn btn-theme">Top</a></p>
+            <p><br/><a href="/research/" class="btn btn-theme">Top</a></p>
           </div>
       </div><!-- portfolio container -->
   </div><!--/Portfoliowrap -->
@@ -202,14 +202,14 @@
         <div id="footerwrap">
     <div class="container">
         <div class="row">
-          <!--
-            <div class="col-lg-4">
+
+            <div class="col-lg-3">
                 <h4>About</h4>
                 <div class="hline-w"></div>
-                <p>Hi, I'm Hannah. I'm a neuroscientist interested in understanding animal behavior, in particular in the context of navigation. If I'm not in the lab or analysing data, I like to sew, program, garden or observe animals.</p>
+                <p>Hi, I'm Hannah. I'm a neuroscientist interested in understanding (neural) mechanisms underlying animal behavior. If I'm not in the lab or analysing data, I like to sew, garden or observe animals.</p>
             </div>
-          -->
-            <div class="col-lg-4">
+
+            <div class="col-lg-3">
                 <h4>Contact</h4>
                 <div class="hline-w"></div>
                 <p>
@@ -227,6 +227,11 @@
                           <span class="sr-only">linkedin</span>
                         </a>
                     
+                        <a href="https://www.instagram.com/hannahquilts/" class="btn-social btn-outline" target="_blank">
+                          <i class="fab fa-instagram fa-3x" aria-hidden="true"></i>
+                          <span class="sr-only">instagram</span>
+                        </a>
+                    
                         <a href="https://scholar.google.com/citations?user=rTECIQwAAAAJ&hl=en&oi=ao" class="btn-social btn-outline" target="_blank">
                           <i class="fab fa-scholar fa-3x" aria-hidden="true"></i>
                           <span class="sr-only">scholar</span>
@@ -235,7 +240,7 @@
                 </p>
             </div>
 
-            <div class="col-lg-8">
+            <div class="col-lg-6">
                 <h4>Credits</h4>
                 <div class="hline-w"></div>
                 <p>
@@ -243,7 +248,8 @@
                   <a href="https://github.com/st4ple/solid-jekyll" target="_blank">
                   Solid theme</a>, which is distributed under the
                   <a href="https://creativecommons.org/licenses/by/3.0/" target="_blank">
-                  CC BY 3.0</a> license.
+                  CC BY 3.0</a> license. Some of the adjustments of the layout and design where
+                  inspired by the <a href="https://html5up.net/spectral" target="_blank">Spetral theme</a> by HTML5 UP.
                   The map on the contact page was taken from <a href="https://www.openstreetmap.org" target="_blank">
                   Open Steet Map</a> under the <a href="https://creativecommons.org/licenses/by-sa/2.0/" target="_blank">
                   CC BY-SA</a> license.
@@ -267,7 +273,6 @@
 <script src="/assets/js/path.js"></script>
 <script src="/assets/js/hotspots.js"></script>
 <script src="/assets/js/Chart.min.js"></script>
-<!--<script src="/assets/js/Chart.Streamgraph.S.js"></script>-->
 <script src="/assets/js/mycharts.js"></script>
 
 <script>
@@ -301,6 +306,7 @@ $('a[href^="#slide"]').on('click', function(event) {
 
 
 <script>
+
 // Portfolio
 (function($) {
 	"use strict";

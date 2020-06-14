@@ -1,7 +1,8 @@
 ---
 layout: project
 title:  "Landmark interaction in freely walking flies"
-summary:
+summary: "A ground-truth dataset to validate behavior in virtual reality.
+"
 date:   2009-03-01 16:54:46
 author: Hannah Haberkern
 topics: "fly behavior vr"

@@ -224,6 +224,11 @@ a:focus {
 	border-color: {{ site.colors.buttonborderact }};
 }
 
+#collapsible-button{
+	outline: none;
+	border: none;
+}
+
 .dmbutton:hover,
 .dmbutton:active,
 .dmbutton:focus{
@@ -353,7 +358,7 @@ a:focus {
 }
 /* :checked */
 .accwrapper input:checked ~ .tab-content {
-  max-height: 50em;
+  max-height: 200em;
 }
 /* Icon */
 .accwrapper label::after {
@@ -493,6 +498,19 @@ a:focus {
 	font-weight: 500;
 }
 
+#mybannerdark {
+	background-color: {{ site.colors.secondary}};
+	text-align: center;
+	padding: 30px;
+}
+
+#mybannerdark h5,
+#mybannerdark h4,
+#mybannerdark h3 {
+	color: white;
+	font-family: 'Raleway', sans-serif;
+	font-weight: 500;
+}
 
 /*	################################################################
 	Title image on home page
