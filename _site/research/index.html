@@ -50,15 +50,7 @@
       <ul class="nav navbar-nav">
         <li ><a href="/">HOME</a></li>
         <li ><a href="/about/">ABOUT</a></li>
-        <li class="dropdown" class="active">
-          <a data-toggle="dropdown" data-hover="dropdown" href="/research/">RESEARCH <b class="caret"></b></a>
-            <ul class="dropdown-menu dropdown-menu-left">
-              <li><a href="/research/#">Interests</a></li>
-              <li><a href="/research/#projects">Projects</a></li>
-              <li><a href="/research/#approach">Approach</a></li>
-            </ul>
-        </li>
-        <!-- <li ><a href="/portfolio/">PROJECTS</a></li> -->
+        <li class="active"><a href="/research/">RESEARCH</a></li>
         <li ><a href="/pubs/">PUBLICATIONS</a></li>
         <li><a href="https://hannahsews.com" target="_blank">BLOG</a></li>
         <li ><a href="/contact/"><i class="far fa-edit fa-lg"></i></a></li>
@@ -82,44 +74,11 @@
       <div class="col-lg-10 col-lg-offset-1">
         <h3>My research interests</h3>
         <p>
-          There are few things that I find as delightful as observing animals.
-          Often, as I mentally place myself in the animal's ethological position,
-          questions spontaneously pop up in my head: What is it doing and why?
-          The realization that detailed observations and quantitative analysis
-          can reveal surprising solutions animals find to solve the problems
-          that they encounter is what drew me into animal behavior research.
-          <br>
-          I began studying behavioral neuroscience for my Bachelor’s thesis
-          project, which taught me the crucial importance of computational
-          analysis and programming. These skills have allowed me to develop
-          new behavioral setups and customize data analysis, freeing me to
-          follow my curiosity rather than be constrained by what existing
-          tools offer. To strengthen my quantitative background, I pursued
-          an MS in computational biology. I learnt to consider the computational
-          complexity of a behavior in addition to its ethological relevance.
-          Armed with an expanded toolkit I returned to experimental work for
-          my Master’s thesis and then my PhD.
-          <br>
-          During my PhD, where I developed new technology and paradigms to
-          study complex behaviors in flies, I profited from my technical skills
-          as well as my experience with behavioral studies. For the future,
-          I want to combine behavioral observations with analysis of neural
-          activity. One reason why I took the unusual step of staying in Dr.
-          Jayaraman’s lab for a postdoc is that it is an outstanding place to
-          acquire expertise in in vivo imaging, something that I did not
-          explore during my PhD. This will prepare me to establish my own lab
-          to study how behavior is generated through the interplay of the
-          sensory environment and the animal’s motivations and past experiences.
-          My unusual combination of interests and skills could help me to
-          provide a distinct perspective on the topic.
+          ...
 
         </p>
       </div>
 
-      <div class="col-lg-10 col-lg-offset-1">
-        <!-- Edit in assets/js/mychart.js-->
-        <canvas id="myInterestChart" width="80" height="30"></canvas>
-      </div>
   </div>
 </div>
 
@@ -176,8 +135,10 @@
   </div>
 </div> <!-- /container -->
 
-
 <div class="container mtb">
+  <h3 class="centered">
+    Past projects
+  </h3>
   <p>
     I spent the last few years developing behavioral paradigms for studying
     visually-guided navigation in head-fixed walking flies. These paradigms
@@ -189,9 +150,6 @@
 </div>
 
 <div class="container mtb">
-  <h3 class="centered">
-    Past projects
-  </h3>
   <br>
 
   <div class="portfolioFilter clearfix centered">
@@ -331,13 +289,16 @@
             directions and can thus be seen from different perspectives.</li>
         </ul>
       </p>
+      <!--
       <p>
         <i class="far fa-angle-double-down fa-lg fa-pull-left"></i> Scrawl down to see an animation illustrating design principles behind the abstract virtual worlds I use in my
         experiments.
       </p>
+      -->
     </div>
   </div>
-  <div class="container-parallax"> <!--container-parallax-->
+  <!--
+  <div class="container-parallax">
       <div class="parallax">
         <div class="forestVR__slide-1"></div>
         <div class="forestVR__slide-3"></div>
@@ -345,7 +306,7 @@
         <div class="forestVR__slide-5"></div>
         <div class="forestVR__slide-6"></div>
       </div>
-  </div><!--/container-parallax-->
+  -->
   <div class="col-lg-10 col-lg-offset-1">
     <p>
       <a href="/research/#approach" class="btn btn-theme">Back</a>
@@ -362,17 +323,19 @@
     <div class="container">
         <div class="row">
 
+            <!--
             <div class="col-lg-3">
                 <h4>About</h4>
                 <div class="hline-w"></div>
                 <p>Hi, I'm Hannah. I'm a neuroscientist interested in understanding (neural) mechanisms underlying animal behavior. If I'm not in the lab or analysing data, I like to sew, garden or observe animals.</p>
             </div>
+            -->
 
-            <div class="col-lg-3">
+            <div class="col-lg-4">
                 <h4>Contact</h4>
                 <div class="hline-w"></div>
                 <p>
-                  <a href="mailto:haberkernh@janelia.hhmi.org">e-mail:</a> haberkernh-at-janelia.hhmi.org<br/>
+                  <a href="mailto:haberkernh@janelia.hhmi.org">e-mail:</a> haberkernh (at) janelia.hhmi.org<br/>
                 </p>
                 <p>
                     
@@ -386,7 +349,7 @@
                           <span class="sr-only">linkedin</span>
                         </a>
                     
-                        <a href="https://www.instagram.com/hannahquilts/" class="btn-social btn-outline" target="_blank">
+                        <a href="https://www.instagram.com/verdigrissewing/" class="btn-social btn-outline" target="_blank">
                           <i class="fab fa-instagram fa-3x" aria-hidden="true"></i>
                           <span class="sr-only">instagram</span>
                         </a>
@@ -399,22 +362,17 @@
                 </p>
             </div>
 
-            <div class="col-lg-6">
+            <div class="col-lg-8">
                 <h4>Credits</h4>
                 <div class="hline-w"></div>
                 <p>
-                  This website was constructed by (substantially) modifying the Jekyll
+                  This website is based on a heavily modified Jekyll
                   <a href="https://github.com/st4ple/solid-jekyll" target="_blank">
-                  Solid theme</a>, which is distributed under the
-                  <a href="https://creativecommons.org/licenses/by/3.0/" target="_blank">
-                  CC BY 3.0</a> license. Some of the adjustments of the layout and design where
-                  inspired by the <a href="https://html5up.net/spectral" target="_blank">Spetral theme</a> by HTML5 UP.
+                  Solid theme</a>. Some of the adjustments of the layout and design were
+                  inspired by the <a href="https://html5up.net/spectral" target="_blank">Spetral theme</a> from HTML5 UP.
                   The map on the contact page was taken from <a href="https://www.openstreetmap.org" target="_blank">
                   Open Steet Map</a> under the <a href="https://creativecommons.org/licenses/by-sa/2.0/" target="_blank">
                   CC BY-SA</a> license.
-                  For the image hotspots on the about page I used code from
-                  <a href="https://codepen.io/katartgraphics/pen/OmQZEe" target="_blank">here</a>.
-
                 </p>
             </div>
         </div><! --/row -->

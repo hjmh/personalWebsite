@@ -5,7 +5,7 @@ title: Hannah Haberkern
 description: "Personal website of Hannah Haberkern"
 analytics: #Google analytics code in the format XX-nnnnnnnn-n
 baseurl: "" #important: start with /
-url: "http://hannahhaberkern.com"
+url: "http://hjmh.github.io"
 
 # Build settings
 markdown: kramdown
@@ -51,10 +51,11 @@ social:
   - title: linkedin
     url: https://www.linkedin.com/in/hannah-haberkern-24a73483
   - title: instagram
-    url: https://www.instagram.com/hannahquilts/
+    url: https://www.instagram.com/verdigrissewing/
   - title: scholar
     url: https://scholar.google.com/citations?user=rTECIQwAAAAJ&hl=en&oi=ao
 
+blogurl: "https://sendthoughtsintothevoid.com/"
 
 # Postal address (add as many lines as necessary). Shown in footer and on Contact page.
 address:
@@ -62,7 +63,7 @@ address:
     - Janelia Research Campus
     - 20147 Ashburn
     - United States
-email: haberkernh-at-janelia.hhmi.org
+email: haberkernh (at) janelia.hhmi.org
 #tel: +34 8493-4893
 
 

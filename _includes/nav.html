@@ -16,15 +16,7 @@
       <ul class="nav navbar-nav">
         <li {% if page.title == "Home" %}class="active"{% endif %}><a href="{{"/" | prepend: site.baseurl }}">HOME</a></li>
         <li {% if page.title == "About" %}class="active"{% endif %}><a href="{{"/about/" | prepend: site.baseurl }}">ABOUT</a></li>
-        <li class="dropdown" {% if page.title == "Research" %}class="active"{% endif %}>
-          <a data-toggle="dropdown" data-hover="dropdown" href="{{"/research/" | prepend: site.baseurl }}">RESEARCH <b class="caret"></b></a>
-            <ul class="dropdown-menu dropdown-menu-left">
-              <li><a href="{{"/research/" | prepend: site.baseurl }}#">Interests</a></li>
-              <li><a href="{{"/research/" | prepend: site.baseurl }}#projects">Projects</a></li>
-              <li><a href="{{"/research/" | prepend: site.baseurl }}#approach">Approach</a></li>
-            </ul>
-        </li>
-        <!-- <li {% if page.title == "Research projects" %}class="active"{% endif %}><a href="{{"/portfolio/" | prepend: site.baseurl }}">PROJECTS</a></li> -->
+        <li {% if page.title == "Research" %}class="active"{% endif %}><a href="{{"/research/" | prepend: site.baseurl }}">RESEARCH</a></li>
         <li {% if page.title == "Publications" %}class="active"{% endif %}><a href="{{"/pubs/" | prepend: site.baseurl }}">PUBLICATIONS</a></li>
         <li><a href="https://hannahsews.com" target="_blank">BLOG</a></li>
         <li {% if page.title == "Contact" %}class="active"{% endif %}><a href="{{"/contact/" | prepend: site.baseurl }}"><i class="far fa-edit fa-lg"></i></a></li>
