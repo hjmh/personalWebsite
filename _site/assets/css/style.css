@@ -27,7 +27,7 @@ body {
 	background: #ffffff;
 	margin: 0;
 	height: 100%;
-	color: #394e60;
+	color: #304150;
 	font-family: 'Lato', sans-serif;
 	font-weight: 400;
 	}
@@ -97,12 +97,12 @@ a:focus {
 ::-moz-selection  {
 	color: #fff;
 	text-shadow:none;
-	background:#394e60;
+	background:#304150;
 }
 ::selection {
 	color: #fff;
 	text-shadow:none;
-	background:#394e60;
+	background:#304150;
 }
 
 .centered {
@@ -116,7 +116,7 @@ a:focus {
 	BOOTSTRAP MODIFICATIONS & TWEAKS
 ################################################################# */
 .navbar {
-	min-height: 60px;
+	min-height: 65px;
 	padding-top: 5px;
 	margin-bottom: 0px;
 }
@@ -124,7 +124,7 @@ a:focus {
 .navbar-brand {
 	font-family: 'Raleway', sans-serif;
 	font-weight: 700;
-	padding-top: 0px;
+	padding-top: 5px;
 }
 .navbar-brand > a:hover {
 	color: #9d94b8;
@@ -145,11 +145,11 @@ a:focus {
 .navbar-default .navbar-nav > li > a {
 	color: white;
 	font-weight: 700;
-	font-size: 12px;
+	font-size: 14px;
 }
 
 .navbar-default {
-	background-color: #394e60;
+	background-color: #304150;
 	border-color: transparent;
 }
 
@@ -180,7 +180,7 @@ a:focus {
 }
 
 .dropdown-menu{
-	background: #394e60;
+	background: #304150;
 	border-color: transparent;
 	left: 0;
 	box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
@@ -200,7 +200,7 @@ a:focus {
 .anchor { padding-top: 70px; }
 
 .btn-theme {
-  color: #394e60;
+  color: #304150;
   background-color: #ffffff;
   border-color: #394e60;
   margin: 1px;
@@ -266,7 +266,7 @@ a:focus {
 }
 
 .btn-info {
-  color: #394e60;
+  color: #304150;
   background-color: #ffffff;
   border-color: #394e60;
 	display: inline-block;
@@ -340,7 +340,7 @@ a:focus {
 	border-radius:2px;
 }
 .accwrapper .blue label {
-  background: #394e60;
+  background: #304150;
 }
 .accwrapper .tab-content {
   max-height: 0;
@@ -499,7 +499,7 @@ a:focus {
 }
 
 #mybannerdark {
-	background-color: #394e60;
+	background-color: #304150;
 	text-align: center;
 	padding: 30px;
 }
@@ -847,7 +847,7 @@ img {
 /* Galery */
 
 #photogal {
-	background-color: #394e60;
+	background-color: #304150;
 	text-align: center;
 	padding: 30px;
 }
@@ -904,7 +904,7 @@ img {
 ################################################################# */
 
 #headerwrap {
-	background-color: #394e60;
+	background-color: #304150;
 	overflow: hidden;
 	position: relative;
 }
@@ -913,8 +913,8 @@ img {
 	background:
 		/* top, transparent red, faked with gradient */
 		linear-gradient(
-			rgba(57, 78, 96, 0.8),
-			rgba(57, 78, 96, 0.3)
+			rgba(48, 65, 80, 0.95),
+			rgba(48, 65, 80, 0.4)
 		),
 		/* bottom, image */
 		url("/assets/img/banner.jpg");
@@ -932,7 +932,7 @@ img {
 	height: 100vh;
 	min-height: 35em;
 
-	animation: bannerfadein 4s;
+	animation: bannerfadein 5s;
 }
 
 @media screen and (max-width: 600px) {
@@ -943,10 +943,10 @@ img {
 
 @keyframes bannerfadein {
     from {
-			background-color: #394e60;
+			background-color: #304150;
 		}
     to   {
-			background-color: rgba(57, 78, 96, 0);
+			background-color: rgba(48, 65, 80, 0);
 		}
 }
 
@@ -1085,7 +1085,7 @@ img {
 
 .portfolioFilter a {
   margin-right: 6px;
-  color: #394e60;
+  color: #304150;
   text-decoration: none;
   border: 1px solid #394e60;
 	background: #fff;
@@ -1151,7 +1151,7 @@ img {
 #footerwrap {
 	padding-top: 40px;
 	padding-bottom: 40px;
-	background: #394e60;
+	background: #304150;
 }
 
 #footerwrap p {
@@ -1297,3 +1297,4 @@ a.anchor{
     top: -80px;
     visibility: hidden;
 }
+
