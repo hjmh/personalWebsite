@@ -13,12 +13,12 @@ permalink: /:categories/:title
 excerpt_separator: <!--more--> #use this in posts to define how long the excerpt of the post (that is shown on the Blog page) is
 
 colors:  #in hex code if not noted else
-  primary: "#70a5a9" #"#eabf95"
-  primary_rgb: "112, 165, 169" #"234, 191, 149" #rgb of the primary. Needed in some places for the transparency effect.
-  secondary:  "#394e60" #"#6aafaf"
-  secondary_rgb: "57, 78, 96"
-  link: "#bd5a28" #"#d18c47"
-  link_hover: "#ffaa80" #"#ebccad"
+  primary: "#70a5a9"
+  primary_rgb: "112, 165, 169"  #rgb of the primary. Needed in some places for the transparency effect.
+  secondary:  "#304150"
+  secondary_rgb: "48, 65, 80"
+  link: "#bd5a28"
+  link_hover: "#ffaa80"
   footer_heading: "#ffffff"
   footer_content: "#ffffff"
   paragraph: "#666"
@@ -26,11 +26,11 @@ colors:  #in hex code if not noted else
   navact: "#ffaa80" #"#f4cda4"
   button: "#ffffff"
   buttonborder: "#394e60" #"#6aafaf"
-  buttonhover: "rgba(235, 126, 71,0.7)" #"#eb7e47" #"rgba(221,179,136,0.3)"
-  buttonact: "rgba(207, 84, 23,0.6)" #"rgba(221,179,136,0.8)"
-  buttonborderact: "rgba(207, 84, 23,0.7)" #"rgb(221,179,136)"
-  panelfill: "#568c8f" #"#ddb388"
-  paneltext: "#fcefe8" #"#75a3a3"
+  buttonhover: "rgba(235, 126, 71,0.7)"
+  buttonact: "rgba(207, 84, 23,0.6)"
+  buttonborderact: "rgba(207, 84, 23,0.7)"
+  panelfill: "#568c8f"
+  paneltext: "#fcefe8"
 
 
 # Making projects separate from posts
