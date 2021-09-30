@@ -6,7 +6,7 @@ permalink: /about/
 
 <div class="container mtb">
     <div class="row">
-        <div class="col-lg-4">
+        <div class="col-lg-4 col-md-4">
           <img class="img-responsive" src="{{ "/assets/img/profilePic.jpg" | prepend: site.baseurl }}" alt="Hannah Haberkern" width=340px>
             <br>
             <h4>Education</h4>
@@ -17,11 +17,11 @@ permalink: /about/
               <p> 2006-2009 | <b>Bachelor in Biomedicine</b> <br> Julius Maximilians Universität Würzburg, Germany </p>
             </div>
             <br>
-            <p><a href="http://localhost:4000/assets/CV_HHaberkern.pdf" target="_blank" class="btn btn-theme">Download CV</a></p>
+            <p><a href="{{ "/assets/CV_HHaberkern.pdf" | prepend: site.baseurl }}" target="_blank" class="btn btn-theme">Download CV</a></p>
             <br>
             <br>
         </div>
-        <div class="col-lg-7">
+        <div class="col-lg-7 col-md-7">
           <h3>About Me</h3>
 
           <p>
@@ -37,29 +37,22 @@ permalink: /about/
           </p>
 
           <p>
-            Currently I'm working on three different projects.
-            First, I’m combining a virtual reality system that I developed
-            during my PhD (see below) with two-photon calcium imaging to
-            investigate <b>how flies stay oriented</b> in
-            dynamic and cluttered two-dimensional visual environments.
-            In a second navigation project I am working, in close collaboration
-            with Dennis Goldschmidt from Carlos Ribeiro’s lab (Champalimaud) and
-            Ann Hermundstad (Janelia), on understandig behavioral strategies
-            and neural mechanisms underlying <b>foraging decisions</b> in flies.
-            In a third, also highly collaborative project, I’ve been analyzing
-            the <b>central complex connectivity</b> using the recently published
-            fruit fly connectome.
+            For more information in my <b>scientific interests</b> as well as <b>past and current work</b>, please check out the <a href="/research">research page</a>!
           </p>
-
+          <br>
           <p>
             In my free time, I like to sew and paint, both of which help me
-            to recharge and relax. I encourage those interested in <b>sewing</b> to check out my blog at
+            to recharge and relax. Managing my health has been particularely important after
+            getting sick with a chronic autoimmune condition called <a href="#Sjogrens">Sjogrens Syndrome</a>. But beyond this,
+            I believe that practicing creativity through crafts has  a bennefitial effect on creative work
+            in science as well. If you are interested in <b>sewing</b> I encourage you to check out my blog at
             <a href="https://hannahsews.com" target="_blank"> hannahsews.com</a>, where I share
-            some of my sewing projects and explain the process behind their creation.
-            I also love looking at plants
-            (I rarely miss an opportunity for visiting a new botanical garden) and
+            some of my sewing projects and explain the process behind their creation. Here is a small <a href="#quiltGallery">gallery of quilts</a> I've made.
+          </p>
+          <p>
+            I also love looking at plants (I rarely miss an opportunity for visiting a new botanical garden) and
             observing animals – particularly birds and insects – and recently
-            became pet parent to a former homing pigeon.
+            became pet parent to a <b> former homing pigeon, Tilda</b> (see <a href="#Tilda">here</a>).
           </p>
 
         </div>
@@ -86,7 +79,7 @@ permalink: /about/
 
 
 <div id="parallaxwrap" class="tinted-image">
-    <div class="container">
+    <div class="container"  id="Tilda">
       <p style="margin-bottom:3cm;"></p>
     </div><!--/container -->
 </div><!--/service -->
@@ -94,7 +87,7 @@ permalink: /about/
 
 <div id="mybannerdark">
   <div class="container">
-  <div class="row" id="Tilda">
+  <div class="row">
     <div class="landcontainer">
       <div class="col-md-1">
       </div>
@@ -117,6 +110,9 @@ permalink: /about/
             Never would I have thought to own a pet pigeon, but I've been nothing but positively surprised.
             Pigeons make wonderful companionsm, are sweet and cuddly and much less loud than parrots.
           </p>
+          <p>
+            <a href="/about/" class="btn btn-theme">Top</a>
+          </p>
         </div>
       </div>
     </div>
@@ -134,12 +130,12 @@ permalink: /about/
 
 
 <div id="mybanner">
-  <div class="container">
+  <div class="container" id="Sjogrens">
     <br>
   </div>
 </div> <!-- /container -->
 <div class="container">
-  <div class="row" id="Sjogrens">
+  <div class="row">
     <div class="col-md-12 col-lg-12">
       <p style="margin-bottom:1.5cm;"></p>
       <h3>Living with a chronic, "invisible" illness</h3>
@@ -189,6 +185,9 @@ permalink: /about/
         <p> I wrote a blog post that goes a bit deeper into the emotional struggle of chronic illness:
           <a href="https://hannahsews.com/2018/07/07/on-learning-how-to-live-in-a-different-body/" target="_blank">On learning how to live in a different body</a>.
         </p>
+        <p>
+          <a href="/about/" class="btn btn-theme">Top</a>
+        </p>
       </div>
     </div>
   </div>
@@ -210,7 +209,7 @@ permalink: /about/
 
 
 <div id="mybanner">
-  <div class="container">
+  <div class="container" id="quiltGallery">
     <h4>
       <b>These are some of my quilts.</b> More on <a href="https://hannahsews.com" target="_blank">my blog</a> or <a href="https://instagram.com/verdigrissewing" target="_blank">instagram</a>.
     </h4>
@@ -222,15 +221,32 @@ permalink: /about/
           <img src="{{ "/assets/img/gallery/Decennial_front.png" | prepend: site.baseurl }}"  onclick="openModal();currentSlide(1)">
         </div>
         <div class="col-sm-3 col-md-3 col-lg-3 gallery">
+          <img src="{{ "/assets/img/gallery/InTransition.png" | prepend: site.baseurl }}" onclick="openModal();currentSlide(2)">
+        </div>
+        <div class="col-sm-3 col-md-3 col-lg-3 gallery">
+          <img src="{{ "/assets/img/gallery/Naiad.png" | prepend: site.baseurl }}" onclick="openModal();currentSlide(3)">
+        </div>
+        <div class="col-sm-3 col-md-3 col-lg-3 gallery">
+          <img src="{{ "/assets/img/gallery/Dankbar.png" | prepend: site.baseurl }}" onclick="openModal();currentSlide(4)">
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-sm-3 col-md-3 col-lg-3 gallery">
           <img src="{{ "/assets/img/gallery/CarnivalInCairo.png" | prepend: site.baseurl }}" onclick="openModal();currentSlide(2)">
         </div>
         <div class="col-sm-3 col-md-3 col-lg-3 gallery">
           <img src="{{ "/assets/img/gallery/coffeeBreak.png" | prepend: site.baseurl }}" onclick="openModal();currentSlide(3)">
         </div>
         <div class="col-sm-3 col-md-3 col-lg-3 gallery">
-          <img src="{{ "/assets/img/gallery/Dankbar.png" | prepend: site.baseurl }}" onclick="openModal();currentSlide(4)">
+          <img src="{{ "/assets/img/gallery/GoldenDays.png" | prepend: site.baseurl }}" onclick="openModal();currentSlide(4)">
+        </div>
+        <div class="col-sm-3 col-md-3 col-lg-3 gallery">
+          <img src="{{ "/assets/img/gallery/pentagonia.png" | prepend: site.baseurl }}" onclick="openModal();currentSlide(4)">
         </div>
       </div>
+
+      <a href="/about/" class="btn btn-theme">Top</a>
+
     </div>
 
     <!-- The Modal/Lightbox -->
@@ -238,20 +254,36 @@ permalink: /about/
       <span class="close cursor" onclick="closeModal()">&times;</span>
       <div class="modal-content">
         <div class="mySlides">
-          <div class="numbertext">1 / 4</div>
+          <div class="numbertext">1 / 8</div>
           <img src="{{ "/assets/img/gallery/Decennial_front.png" | prepend: site.baseurl }}" style="width:50%">
         </div>
         <div class="mySlides">
-          <div class="numbertext">2 / 4</div>
+          <div class="numbertext">2 / 8</div>
+          <img src="{{ "/assets/img/gallery/InTransition.png" | prepend: site.baseurl }}" style="width:50%">
+        </div>
+        <div class="mySlides">
+          <div class="numbertext">3 / 8</div>
+          <img src="{{ "/assets/img/gallery/Naiad.png" | prepend: site.baseurl }}" style="width:50%">
+        </div>
+        <div class="mySlides">
+          <div class="numbertext">4 / 8</div>
+          <img src="{{ "/assets/img/gallery/Dankbar.png" | prepend: site.baseurl }}" style="width:50%">
+        </div>
+        <div class="mySlides">
+          <div class="numbertext">5 / 8</div>
           <img src="{{ "/assets/img/gallery/CarnivalInCairo.png" | prepend: site.baseurl }}" style="width:50%">
         </div>
         <div class="mySlides">
-          <div class="numbertext">3 / 4</div>
+          <div class="numbertext">6 / 8</div>
           <img src="{{ "/assets/img/gallery/coffeeBreak.png" | prepend: site.baseurl }}" style="width:50%">
         </div>
         <div class="mySlides">
-          <div class="numbertext">4 / 4</div>
-          <img src="{{ "/assets/img/gallery/Dankbar.png" | prepend: site.baseurl }}" style="width:50%">
+          <div class="numbertext">7 / 8</div>
+          <img src="{{ "/assets/img/gallery/GoldenDays.png" | prepend: site.baseurl }}" style="width:50%">
+        </div>
+        <div class="mySlides">
+          <div class="numbertext">8 / 8</div>
+          <img src="{{ "/assets/img/gallery/pentagonia.png" | prepend: site.baseurl }}" style="width:50%">
         </div>
 
         <!-- Next/previous controls -->
