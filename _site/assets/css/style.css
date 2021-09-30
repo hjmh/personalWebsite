@@ -501,6 +501,10 @@ a:focus {
 	font-family: 'Raleway', sans-serif;
 	font-weight: 500;
 }
+#mybanner p{
+	color: white;
+	font-weight: 500;
+}
 
 #mybannerdark {
 	background-color: #304150;
@@ -518,6 +522,7 @@ a:focus {
 
 #mybannerdark p{
 	color: white;
+	font-weight: 500;
 }
 
 .banneritem {
@@ -602,10 +607,6 @@ a:focus {
   color: white;
   text-decoration: none;
   cursor: pointer;
-}
-
-.mySlides {
-  display: none;
 }
 
 .cursor {
