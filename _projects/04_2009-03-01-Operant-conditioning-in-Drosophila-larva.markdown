@@ -4,12 +4,13 @@ title:  "Operant conditioning in <i>Drosophila</i> larva?"
 summary: "Attempts in teaching larvae to learn about the consequences of their behavior."
 date:   2009-03-01 16:54:46
 author: Hannah Haberkern
-topics: "fly behavior conditioning"
+topics: "fly behavior learning unrestrained"
 categories:
 - lines:
-  - Fly larva
-  - Conditioning
-  - Behavior
+  - fruit fly
+  - learning
+  - behavior
+  - unrestrained
 img: operantLarvaTitle.png
 thumb: operantLarvaTitle.png
 carousel:

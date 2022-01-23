@@ -311,6 +311,30 @@ a:focus {
 	margin-bottom: 15px;
 }
 
+.collapse {
+	margin-left: 20px;
+	margin-bottom: 0px;
+  &:not(.show) {
+    display: none;
+  }
+}
+
+.collapse p {
+	color: #304150;
+}
+
+.collapsing {
+  height: 0;
+  overflow: hidden;
+	margin-left: 20px;
+	margin-top: -20px;
+	margin-bottom: 0px;
+  @include transition($transition-collapse);
+}
+
+.collapsing p {
+	color: #304150;
+}
 /*	################################################################
 	accordion
 ################################################################# */
@@ -1220,8 +1244,8 @@ img {
 	color:#fff;
 }
 .portfolio-item h3 {
-	margin:-20px 0 20px;
-	font-size:22px;
+	margin:20px 0 20px;
+	font-size:20px;
 	text-transform: uppercase;
 }
 
@@ -1272,85 +1296,8 @@ img {
   background: rgba(207, 84, 23,0.6);
   border: 1px solid rgba(207, 84, 23,0.7);
   color: white;
-}
-
-/* Testimonials Wrap */
-#twrapback {
-    background-color: #70a5a9;
-    background-color:rgba(112, 165, 169,.8);
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-}
-
-#twrap {
-    background: url(../img/t-back.jpg) no-repeat center top;
-    position: relative;
-    margin-top: 0px;
-	padding:30px;
-	text-align:center;
-	background-attachment: relative;
-	background-position: center center;
-	width: 100%;
-}
-
-#twrap h4{
-	font-weight:500;
-}
-
-#twrap p {
-	color:#ffccb3;
-	line-height: 20px;
-	font-weight: 400;
-	text-align: center;
-}
-
-/* clients logo */
-#cwrap {
-	background: #f7f7f7;
-	margin-top: 0px;
-	padding-top: 80px;
-	padding-bottom: 100px;
-}
-
-#cwrap h3 {
-	margin-bottom: 60px;
-}
-
-/* Footer */
-#footerwrap {
-	padding-top: 40px;
-	padding-bottom: 40px;
-	background: #304150;
-}
-
-#footerwrap p {
-	color: #ffffff;
-	font-size: 12px;
-}
-
-#footerwrap a {
-	color: #ffccb3;
-}
-#footerwrap a:hover {
-	color: #ffaa80;
-}
-
-#footerwrap h4 {
-	color: #ffffff;
-	font-size: 14px;
-}
-
-#footerwrap i {
-	font-size: 30px;
-	color: #ffffff;
-	padding-right: 20px;
-}
-
-#footerwrap i:hover {
-	color: #70a5a9
+	padding: 4px 10px;
+  border-radius: 3px;
 }
 
 /*	################################################################

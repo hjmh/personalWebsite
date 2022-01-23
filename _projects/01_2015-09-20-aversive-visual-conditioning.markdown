@@ -4,14 +4,13 @@ title:  "Aversive visual conditioning in a 2D environment"
 summary: "A behavioral paradigm aimed at studying (for example) goal-directed navigation."
 date:   2015-09-20 12:00:00
 author: Hannah Haberkern
-topics: "fly treadmill behavior vr conditioning"
+topics: "fly behavior vr learning"
 categories:
 - lines:
-  - Fruit fly
-  - Spherical treadmill
-  - Behavior
-  - VR
-  - Conditioning
+  - fruit fly
+  - behavior
+  - virtual reality
+  - learning
 img: conditioningVRTitle.png
 thumb: conditioningVRTitle.png
 carousel:

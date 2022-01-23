@@ -4,12 +4,11 @@ title:  "Mutlisensory integration in crickets"
 summary: "How do responses to mechanosensory antennal stimulation and phonotaxis interact?"
 date:   2012-10-01 16:54:40
 #author: Hannah Haberkern
-topics: "cricket treadmill behavior"
+topics: "cricket behavior"
 categories:
 - lines:
-  - Cricket
-  - Trackball
-  - Behavior
+  - cricket
+  - behavior
 img: cricketTitle.png
 thumb: cricketThumb.png
 carousel:

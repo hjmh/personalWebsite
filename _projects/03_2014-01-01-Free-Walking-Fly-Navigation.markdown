@@ -5,12 +5,12 @@ summary: "A ground-truth dataset to validate behavior in virtual reality.
 "
 date:   2009-03-01 16:54:46
 author: Hannah Haberkern
-topics: "fly behavior vr"
+topics: "fly behavior unrestrained"
 categories:
 - lines:
-  - Fruit fly
-  - Behavior
-  - VR
+  - fruit fly
+  - behavior
+  - unrestrained
 img: freeWalkingFlyTitle.png
 thumb: freeWalkingFlyTitle.png
 carousel:
