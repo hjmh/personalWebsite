@@ -1,7 +1,6 @@
 <div id="footerwrap">
     <div class="container">
         <div class="row">
-
             <!--
             <div class="col-lg-3">
                 <h4>About</h4>
@@ -11,6 +10,7 @@
             -->
 
             <div class="col-lg-4">
+              <br>
                 <h4>Contact</h4>
                 <div class="hline-w"></div>
                 <p>
@@ -19,7 +19,7 @@
                 <p>
                     {% for network in site.social %}
                         <a href="{{ network.url }}" class="btn-social btn-outline" target="_blank">
-                          <i class="fab fa-{{ network.title }} fa-3x" aria-hidden="true"></i>
+                          <i class="fab fa-{{ network.title }} fa-2x" aria-hidden="true"></i>
                           <span class="sr-only">{{network.title}}</span>
                         </a>
                     {% endfor %}
@@ -27,6 +27,7 @@
             </div>
 
             <div class="col-lg-8">
+              <br>
                 <h4>Credits</h4>
                 <div class="hline-w"></div>
                 <p>
